@@ -6,21 +6,21 @@
 }
 
 body {
-    background-color: #e0e0e0; /* Fundo bem claro */
-    color: #333; /* Texto escuro para contraste */
+    background-color: #1e3a75; /* Fundo bem claro */
+    color: #fff2f2; /* Texto escuro para contraste */
 }
 header {
-    background-color: #e0e0e0; /* Cinza claro */
-    color: #333;
+    background-color: #1e3a75; /* Cinza claro */
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 2em;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 /* Navegação */
 nav {
-    background-color: #fff; /* Branco */
+    background-color: #172d5c; /* Branco */
     padding: 15px;
     text-align: center;
     display: flex;
@@ -51,7 +51,7 @@ nav a:hover {
 /* Layout principal */
 main {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 12500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +64,16 @@ section {
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section.icons {
+    background-color: #ffffff; /* Branco */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    padding: 00px;
     text-align: center;
     width: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -138,7 +148,7 @@ article a {
 
 /* Rodapé */
 footer {
-    background-color: #e0e0e0; /* Cinza claro */
+    background-color: #0c2865; /* Cinza claro */
     color: #333;
     text-align: center;
     padding: 10px;

@@ -6,16 +6,16 @@
 }
 
 body {
-    background-color: #f7f7f7; /* Fundo bem claro */
+    background-color: #1e3a75; /* Fundo bem claro */
     color: #333; /* Texto escuro para contraste */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #e0e0e0; /* Cinza claro */
+    background-color: #1e3a75; /* Cinza claro */
     color: #333;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 2em;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@ header {
 
 /* Navegação */
 nav {
-    background-color: #fff; /* Branco */
+    background-color: #172d5c; /* Branco */
     padding: 15px;
     text-align: center;
     display: flex;
@@ -54,7 +54,7 @@ nav a:hover {
 /* Layout principal */
 main {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 12500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +133,7 @@ h2, h3, h4 {
 
 /* Rodapé */
 footer {
-    background-color: #e0e0e0; /* Cinza claro */
+    background-color: #0c2865; /* Cinza claro */
     color: #333;
     text-align: center;
     padding: 20px;
@@ -142,5 +142,5 @@ footer {
 }
 
 footer div {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
