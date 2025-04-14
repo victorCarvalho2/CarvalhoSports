@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 /* * {
+=======
+* {
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 } */
 
 /* body {
@@ -13,17 +18,37 @@
 /* Cabeçalho */
 /* header {
     background-color: #1e3a75;
+=======
+}
+
+body {
+    background-color: #1e3a75; /* Fundo bem claro */
+    color: #333; /* Texto escuro para contraste */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e3a75; /* Cinza claro */
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     color: #ffffff;
     text-align: center;
     padding: 10px;
     font-size: 2em;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
 } */
 
 /* Navegação */
 /* nav {
     background-color: #172d5c; 
+=======
+}
+
+/* Navegação */
+nav {
+    background-color: #172d5c; /* Branco */
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     padding: 15px;
     text-align: center;
     display: flex;
@@ -31,10 +56,17 @@
     gap: 20px;
     flex-wrap: wrap;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
 } */
 
 /* nav a {
     color: #555;
+=======
+}
+
+nav a {
+    color: #555; /* Cinza escuro */
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
@@ -42,6 +74,7 @@
     border-radius: 25px;
     font-size: 1.1em;
     background-color: #fff;
+<<<<<<< HEAD
     border: 2px solid #e0e0e0; 
 } */
 
@@ -53,6 +86,19 @@
 
 /* Layout principal */
 /* main {
+=======
+    border: 2px solid #e0e0e0; /* Bordas claras */
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Layout principal */
+main {
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     padding: 20px;
     max-width: 12500px;
     margin: auto;
@@ -60,10 +106,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
 } */
 
 /* section {
     background-color: #fff;
+=======
+}
+
+section {
+    background-color: #fff; /* Branco */
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -75,10 +128,17 @@
 section:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+<<<<<<< HEAD
 } */
 
 /* Links e imagens dos produtos */
 /* section a {
+=======
+}
+
+/* Links e imagens dos produtos */
+section a {
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     display: inline-block;
     color: #555;
     text-decoration: none;
@@ -109,10 +169,17 @@ section img {
 section img:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+<<<<<<< HEAD
 } */
 
 /* Estilização de artigos (blocos de produtos) */
 /* article {
+=======
+}
+
+/* Estilização de artigos (blocos de produtos) */
+article {
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
@@ -129,12 +196,21 @@ article img {
 h2, h3, h4 {
     color: #333;
     margin-bottom: 15px;
+<<<<<<< HEAD
 } */
 
 /* Rodapé */
 /* footer {
     background-color: #0c2865;  */
     /* color: #ffffff;
+=======
+}
+
+/* Rodapé */
+footer {
+    background-color: #0c2865; /* Cinza claro */
+    color: #ffffff;
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -143,6 +219,7 @@ h2, h3, h4 {
 
 footer div {
     margin-bottom: 10px;
+<<<<<<< HEAD
 } */
 
 * {
@@ -350,4 +427,6 @@ footer div {
     footer {
         font-size: 0.9em;
     }
+=======
+>>>>>>> 26d3a76430ccb207041c4f948d390e9f752b7646
 }
