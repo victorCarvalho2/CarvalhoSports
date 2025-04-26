@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = "";
 
     try {
-        $conn = new PDO("mysql:host=$servername;dbname=carvalhosports", $username, $password);
+        $conn = new PDO("mysql:host=127.0.0.1;dbname=carvalhosports", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $stmt = $conn->prepare("SELECT codigo FROM usuarios WHERE email = :email AND senha = MD5(:senha)");

@@ -82,14 +82,14 @@ section:hover {
 /* Links e imagens dos produtos */
 section a {
     display: inline-block;
-    color: #555;
+    color: #eaeaea;
     text-decoration: none;
     font-weight: bold;
     margin: 10px;
     transition: 0.3s;
-    background-color: #fff;
+    background-color: #1e3a75;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 2px solid #e0e0e0;
 }
 

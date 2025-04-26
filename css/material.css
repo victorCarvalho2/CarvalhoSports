@@ -192,3 +192,113 @@ footer div {
         font-size: 0.9em;
     }
 }
+/*  CARRINHO */
+.carrinho {
+    width: 100%;
+    max-width: 10000px;
+    margin: 30px auto; /* Centraliza no meio da página com espaço acima */
+    background-color: #fff;
+    padding: 30px;
+    /* border-radius: 15px; */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+    
+}
+
+.carrinho h2, .carrinho h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.lista-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+.item-carrinho {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.item-carrinho strong {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.item-carrinho span {
+    margin-left: 10px;
+}
+
+.btn-remover {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.btn-remover:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+#mensagem-carrinho {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    z-index: 9999;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+button.comprar{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    background-color: #1e3a75;
+    border: 2px solid #e0e0e0;
+    transition: 0.3s;
+}
+
+button#finalizarCompra{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    background-color: #1e3a75;
+    border: 2px solid #e0e0e0;
+    transition: 0.3s;
+}   
+
+button{
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    background-color: #435376;
+    border: 2px solid #e0e0e0;
+    transition: 0.3s;
+}
