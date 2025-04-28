@@ -94,7 +94,7 @@ section a {
     border: 2px solid #e0e0e0;
 }
 
-section a:hover {
+section button:hover {
     background-color: #e0e0e0;
     color: #333;
 }
