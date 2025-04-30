@@ -17,7 +17,7 @@ header {
     background-color: #1e3a75;
     color: #ffff; /* Alterado para texto mais escuro */
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     font-size: 2em;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -31,6 +31,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin: 25px;
     flex-wrap: wrap;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -67,12 +68,15 @@ main {
 /* Seções gerais */
 section {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     text-align: center;
+    height: 100%;
     width: 100%;
+    max-width: 10000;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 25px auto;
 }
 
 section:hover {
@@ -83,7 +87,7 @@ section:hover {
 /* Links e imagens dos produtos */
 section a {
     display: inline-block;
-    color: #555;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     margin: 10px;
@@ -100,7 +104,7 @@ section button:hover {
 }
 
 section img {
-    width: 200px;
+    width: 370px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -112,6 +116,14 @@ section img:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* Estilização de artigos (blocos de produtos) */
 article {
@@ -198,9 +210,9 @@ footer div {
 .carrinho {
     width: 100%;
     max-width: 10000px;
-    margin: 30px auto; /* Centraliza no meio da página com espaço acima */
+    margin: 25px auto; /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
-    padding: 30px;
+    padding: 25px;
     /* border-radius: 15px; */
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -304,3 +316,39 @@ button{
     border: 2px solid #e0e0e0;
     transition: 0.3s;
 }
+/* RESPONSIVIDADE PARA PRODUTOS NO MOBILE */
+/* @media (max-width: 768px) { */
+    /* Exibir apenas o primeiro produto */
+    /* .produto {
+        display: none;
+    }
+
+    .produto:first-child {
+        display: block;
+    } */
+
+    /* Organização vertical e centralizada */
+    /* .produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .produto img {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .produto a,
+    .produto button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px 10px;
+    }
+} */
