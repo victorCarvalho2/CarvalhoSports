@@ -11,25 +11,27 @@ body {
     color: #333; /* Texto escuro para maior legibilidade */
 }
 
+
 /* Cabeçalho */
 header {
     background-color: #1e3a75;
     color: #ffff; /* Alterado para texto mais escuro */
     text-align: center;
-    padding: 10px;
-    font-size: 2em;
+    padding: 15px;
+    font-size: 100px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Navegação */
 nav {
-    background-color: #172d5c;
-    padding: 15px;
+    background-color: #1e3a75;
+    padding: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 35px;
+    /* margin: 25px; */
     flex-wrap: wrap;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -66,12 +68,14 @@ main {
 /* Seções gerais */
 section {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     text-align: center;
+    height: 100%;
     width: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 25px auto;
 }
 
 section:hover {
@@ -82,7 +86,7 @@ section:hover {
 /* Links e imagens dos produtos */
 section a {
     display: inline-block;
-    color: #555;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     margin: 10px;
@@ -99,7 +103,7 @@ section button:hover {
 }
 
 section img {
-    width: 200px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -123,7 +127,7 @@ article {
 }
 
 article img {
-    width: 160px;
+    width: 350px;
     margin: 10px;
 }
 
@@ -136,7 +140,7 @@ h2, h3, h4 {
 /* Rodapé */
 footer {
     background-color: #0c2865;
-    color: #ffff; /* Texto mais claro no rodapé */
+    color: #333; /* Texto mais claro no rodapé */
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -192,13 +196,14 @@ footer div {
         font-size: 0.9em;
     }
 }
+
 /*  CARRINHO */
 .carrinho {
     width: 100%;
     max-width: 10000px;
-    margin: 30px auto; /* Centraliza no meio da página com espaço acima */
+    margin: 25px auto; /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
-    padding: 30px;
+    padding: 25px;
     /* border-radius: 15px; */
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -249,7 +254,7 @@ footer div {
 }
 
 .btn-remover:hover {
-    background-color: #435376;
+    background-color: #e0e0e0;
     color: #333;
 }
 #mensagem-carrinho {
@@ -272,7 +277,7 @@ button.comprar{
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 1.1em;
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
@@ -284,7 +289,7 @@ button#finalizarCompra{
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 1.1em;
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
@@ -296,7 +301,7 @@ button{
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 1.1em;
     background-color: #435376;
     border: 2px solid #e0e0e0;
