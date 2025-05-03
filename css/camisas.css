@@ -169,50 +169,61 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    nav a {
-        padding: 6px 12px;
-        font-size: 0.95em;
+
+    #pagina_inicial{
+        max-width: 350px;
     }
 
-    section img,
-    article img {
-        width: 100%;
-        max-width: 250px;
-    }
+    #camisa_botafogo{
+    max-width: 350px;
+   }
+   #camisa_inter{
+    max-width: 350px;
+   }
+   #camisa_palmeiras{
+    max-width: 350px;
+   }
+   #camisa_vasco{
+    max-width: 350px;
+   }
+   #camisa_sao_paulo{
+    max-width: 350px;
+   }
 
-    main {
-        padding: 10px;
-        gap: 15px;
-    }
+   .camisa_botafogo{
+    display: none;
+   }
+   .camisa_inter{
+    display: none;
+   }
+   .camisa_palmeiras{
+    display: none;
+   }
+   .camisa_vasco{
+    display: none;
+   }
+   .camisa_sao_paulo{
+    display: none;
+   }
 
-    header {
-        font-size: 1.5em;
-    }
-}
 
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
 
-    section,
-    article {
-        padding: 10px;
-    }
+   .chuteiras{
+    display: none;
+   }
+   .camisas{
+    display: none;
+   }
+   .material{
+    display: none;
+   }
+   .tenis{
+    display: none;
+   }
+   .sair{
+    display: none;
+   }
 
-    section a {
-        padding: 6px 10px;
-        font-size: 0.9em;
-    }
-
-    header {
-        font-size: 1.3em;
-    }
-
-    footer {
-        font-size: 0.9em;
-    }
 }
 
 /*  CARRINHO */

@@ -119,20 +119,6 @@ section img:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilização de artigos (blocos de produtos) */
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 160px;
-    margin: 10px;
-}
 
 /* Títulos */
 h2,
@@ -150,58 +136,51 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    
 }
 
 footer div {
     margin-bottom: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    nav a {
-        padding: 6px 12px;
-        font-size: 0.95em;
-    }
-
-    section img,
-    article img {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    main {
-        padding: 10px;
-        gap: 15px;
-    }
-
-    header {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 480px) {
+/* Responsividade*/
+ @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+       display: none; 
+    } 
 
-    section,
-    article {
-        padding: 10px;
-    }
+    /*img aparecera  */
+    
+        #azul{
+            max-width: 350px;           
+        }
 
-    section a {
-        padding: 6px 10px;
-        font-size: 0.9em;
-    }
+        #camisabotafogo{
+            max-width: 350px;            
+        }
+        #garrafa_corinthians{
+            max-width: 350px;
+        }
+        #tenis_nike{
+            max-width: 350px;
+        }
+
+    /* img ocultas  */
+
+        .chuteira-img{
+            display: none;
+        }
+        .camisas-img{
+            display: none;
+        }
+        .acessorios{
+            display: none;
+        }
+        .tenis{
+            display: none;
+        }
 
     header {
-        font-size: 1.3em;
-    }
-
-    footer {
-        font-size: 0.9em;
+        font-size: 50px;
     }
 }
 

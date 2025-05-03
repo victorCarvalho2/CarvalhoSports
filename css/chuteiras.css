@@ -161,47 +161,13 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    nav a {
-        padding: 6px 12px;
-        font-size: 0.95em;
+    #nike_azul{
+        max-width: 350px;
     }
 
-    section img, article img {
-        width: 100%;
-        max-width: 250px;
-    }
 
-    main {
-        padding: 10px;
-        gap: 15px;
-    }
-
-    header {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section, article {
-        padding: 10px;
-    }
-
-    section a {
-        padding: 6px 10px;
-        font-size: 0.9em;
-    }
-
-    header {
-        font-size: 1.3em;
-    }
-
-    footer {
-        font-size: 0.9em;
+    .nike_azul{
+        display: none;
     }
 }
 
