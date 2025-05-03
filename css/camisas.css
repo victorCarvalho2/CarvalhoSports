@@ -169,6 +169,9 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    header{
+        font-size: 1.5rem;
+    }
 
     #pagina_inicial{
         max-width: 350px;

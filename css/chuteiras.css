@@ -161,13 +161,62 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
     #nike_azul{
         max-width: 350px;
     }
+    #nike_preta{
+        max-width: 350px;
+    }
+    #nike_rosa{
+        max-width: 350px;
+    }
+    #nike_verde{
+        max-width: 350px;
+    }
+    
+    /* NAV */
+    #pagina_inicial{
+        max-width: 350px;
+    }
 
+    .camisas{
+        display: none;
+    }
+    .chuteiras{
+        display: none;
+    }
+    .material{
+        display: none;
+    }
+    .tenis{
+        display: none;
+    }
+    .sair{
+        display: none;
+    }
+
+
+    .texto{
+        display:none ;
+    }
 
     .nike_azul{
         display: none;
+    }
+    .nike_preta{
+        display: none;
+    }
+    .nike_rosa{
+        display: none;
+    }
+    .nike_verde{
+        display: none;
+    }
+
+
+    header{
+        font-size: 1.5rem;
     }
 }
 
