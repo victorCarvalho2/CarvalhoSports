@@ -46,7 +46,7 @@ nav a {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: #fff;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
@@ -106,7 +106,7 @@ section a:hover {
 }
 
 section img {
-    width: 360px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;

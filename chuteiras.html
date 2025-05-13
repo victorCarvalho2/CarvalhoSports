@@ -21,8 +21,7 @@
       <a class="sair" href="index.php">Sair</a>
     </nav>
   </header>
-  <!-- <main> -->
-
+    
   <section class="texto">
     <h2>Na Carvalho Sport's, temos:</h2>
     <h3>Todos os tipos de chuteiras que você precisar.</h3>
@@ -38,7 +37,7 @@
       <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
     </div>
     <h2>Chuteira Nike Phantom GT2 Elite</h2>
-    <h3>Disponivel por apenas: <br>R$ 997,49</h3>
+    <h3>Disponivel por: R$ 997,49</h3>
     <button class="comprar" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao Carrinho</button>
   </section>
 
@@ -97,6 +96,7 @@
     </ul>
     <p class="total">Total: R$ 0,00</p>
     <button id="finalizarCompra">Finalizar Compra</button>
+    <div id="qrcode" style="margin-top: 20px;"></div>
   </div>
 
   <script>
@@ -154,7 +154,6 @@
         alert("Seu carrinho está vazio.");
       }
     });
-
 
     document.getElementById("finalizarCompra").addEventListener("click", () => {
       // Recupera os itens do carrinho armazenados no localStorage

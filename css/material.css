@@ -103,7 +103,16 @@ section button:hover {
 }
 
 section img {
-    width: 350px;
+    width: 345px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section img.bolsa_botafogo img.garrafa_botafogo{
+    width: 370px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -116,20 +125,6 @@ section img:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilização de artigos (blocos de produtos) */
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 350px;
-    margin: 10px;
-}
 
 /* Títulos */
 h2, h3, h4 {
@@ -153,9 +148,6 @@ footer div {
 
 /* Responsividade*/
 @media (max-width: 768px) {
-    nav{
-       
-    }
    
     /*img aparecera  */
 /* 
@@ -211,7 +203,7 @@ footer div {
         } 
 
     header {
-        font-size: 50px;
+        font-size: 1.5rem;
     }
 }
 
