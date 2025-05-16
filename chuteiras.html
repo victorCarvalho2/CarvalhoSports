@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/chuteiras.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Carvalho Sport's - Chuteiras</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
       <a class="sair" href="index.php">Sair</a>
     </nav>
   </header>
-    
+
   <section class="texto">
     <h2>Na Carvalho Sport's, temos:</h2>
     <h3>Todos os tipos de chuteiras que você precisar.</h3>
@@ -83,35 +84,27 @@
     <h3>Disponivel por apenas: <br>R$ 489,99</h3>
     <button class="comprar" data-nome="Nike Tiempo Legend 10 Elite" data-preco="489.99">Adicionar ao Carrinho</button>
   </section>
-  </main>
 
-  <!-- SSSSSSSSSSSCCCCCCCCCCCCCCCCCCRRRRRRRRRRRRRRRRIIIIIIIIIIIIIIIIIIIIIPPPPPPPPPPPPPPPTTTTTTTTTTTTTTTTTT'S -->
 
 
   <!-- Carrinho -->
   <div class="carrinho">
     <h3>Carrinho de Compras</h3>
-    <ul id="itensCarrinho">
-      <!-- Itens adicionados ao carrinho aparecerão aqui -->
-    </ul>
+    <ul id="itensCarrinho"></ul>
     <p class="total">Total: R$ 0,00</p>
     <button id="finalizarCompra">Finalizar Compra</button>
     <div id="qrcode" style="margin-top: 20px;"></div>
   </div>
 
   <script>
-    // Array para armazenar os itens do carrinho
     let carrinho = [];
 
-    // Função para atualizar a exibição do carrinho
     function atualizarCarrinho() {
       const carrinhoUl = document.getElementById("itensCarrinho");
       const total = document.querySelector(".total");
       carrinhoUl.innerHTML = '';
-
       let totalCarrinho = 0;
 
-      // Exibe cada item no carrinho
       carrinho.forEach((item, index) => {
         const li = document.createElement("li");
         li.innerHTML = `${item.nome} - R$ ${item.preco.toFixed(2)} <button onclick="removerItem(${index})">Remover</button>`;
@@ -122,73 +115,84 @@
       total.innerHTML = `Total: R$ ${totalCarrinho.toFixed(2)}`;
     }
 
-    // Função para adicionar item ao carrinho
     function adicionarCarrinho(event) {
       const nome = event.target.getAttribute("data-nome");
       const preco = parseFloat(event.target.getAttribute("data-preco"));
-
       carrinho.push({ nome, preco });
       atualizarCarrinho();
       alert(`✅ "${nome}" foi adicionado ao carrinho!`);
-
     }
 
-    // Função para remover item do carrinho
     function removerItem(index) {
       carrinho.splice(index, 1);
       atualizarCarrinho();
     }
 
-    // Evento para adicionar produtos ao carrinho
     document.querySelectorAll(".comprar").forEach(button => {
       button.addEventListener("click", adicionarCarrinho);
     });
 
-    // Finalizar compra (pode adicionar lógica de pagamento)
     document.getElementById("finalizarCompra").addEventListener("click", () => {
-      if (carrinho.length > 0) {
-        alert("Compra finalizada com sucesso!");
-        carrinho = [];
-        atualizarCarrinho();
-      } else {
+      if (carrinho.length === 0) {
         alert("Seu carrinho está vazio.");
+        return;
       }
-    });
 
-    document.getElementById("finalizarCompra").addEventListener("click", () => {
-      // Recupera os itens do carrinho armazenados no localStorage
-      const itensCarrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      const totalCompra = carrinho.reduce((acc, item) => acc + item.preco, 0);
+      const chavePix = "victor@gmail.com"; // SUBSTITUA PELA SUA CHAVE PIX REAL
+      const nomeLoja = "Carvalho Sports";
+      const cidade = "Duque de Caxias";
+      const valor = totalCompra.toFixed(2);
 
-      // Calcula o total da compra
-      const valorTotal = itensCarrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
+      const payload = `00020126580014BR.GOV.BCB.PIX0136${chavePix.length.toString().padStart(2, '0')}${chavePix}
+52040000
+5303986
+540${valor.length}${valor}
+5802BR
+5913${nomeLoja.padEnd(13)}
+6011${cidade}
+62070503***6304`.replace(/\s/g, '');
 
-      // Envia os dados para o PHP
-      fetch("finalizar.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          itens: itensCarrinho,
-          total: valorTotal
-        })
-      })
-        .then(res => res.json())
-        .then(res => {
-          if (res.status === "sucesso") {
-            alert("Pedido realizado com sucesso!");
-            // Limpa o carrinho após finalizar a compra
-            localStorage.removeItem("carrinho");
-            location.reload();
-          } else {
-            alert("Erro ao salvar pedido: " + res.mensagem);
+      function crc16(payload) {
+        let polinomio = 0x1021;
+        let resultado = 0xFFFF;
+        for (let i = 0; i < payload.length; i++) {
+          resultado ^= payload.charCodeAt(i) << 8;
+          for (let j = 0; j < 8; j++) {
+            if ((resultado <<= 1) & 0x10000) {
+              resultado ^= polinomio;
+            }
+            resultado &= 0xFFFF;
           }
-        })
-        .catch(error => {
-          alert("Erro ao processar a compra: " + error);
-        });
+        }
+        return resultado.toString(16).toUpperCase().padStart(4, '0');
+      }
+      function copiarLink() {
+        const input = document.getElementById("linkAgradecimento");
+        input.select();
+        input.setSelectionRange(0, 99999); // Para dispositivos móveis
+        navigator.clipboard.writeText(input.value)
+          .then(() => alert("🔗 Link copiado para a área de transferência!"))
+          .catch(err => alert("❌ Erro ao copiar link: " + err));
+      }
+
+      const payloadCompleto = payload + crc16(payload);
+
+      const qrCodeDiv = document.getElementById("qrcode");
+      qrCodeDiv.innerHTML = "";
+      QRCode.toCanvas(payloadCompleto, { width: 256 }, function (err, canvas) {
+        if (err) {
+          alert("Erro ao gerar QR Code");
+          return;
+        }
+        qrCodeDiv.appendChild(canvas);
+      });
+
+      alert("✅ Compra iniciada! Escaneie o QR Code para pagar via PIX.");
     });
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho)); // Garantir persistência
   </script>
 
-
 </body>
-
 </html>

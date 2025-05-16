@@ -2,24 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    /* Alterado para 'Roboto' */
+    font-family: 'Times New Roman', Times, serif; /* Alterado para 'Roboto' */
     font-size: xx-large;
 }
 
 body {
-    background-color: #1e3a75;
-    /* Cor de fundo do corpo */
-    color: #333;
-    /* Texto escuro para maior legibilidade */
+    background-color: #1e3a75; /* Cor de fundo do corpo */
+    color: #333; /* Texto escuro para maior legibilidade */
 }
 
 
 /* Cabeçalho */
 header {
     background-color: #1e3a75;
-    color: #ffff;
-    /* Alterado para texto mais escuro */
+    color: #ffff; /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
     font-size: 100px;
@@ -46,7 +42,7 @@ nav a {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: #fff;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
@@ -107,7 +103,7 @@ section button:hover {
 }
 
 section img {
-    width: 370px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -120,43 +116,17 @@ section img:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.galeria-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-
-/* Estilização de artigos (blocos de produtos) */
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 160px;
-    margin: 10px;
-}
-
 /* Títulos */
-h2,
-h3,
-h4 {
+h2, h3, h4 {
     color: #333;
+    font-size: 1em;
     margin-bottom: 15px;
 }
 
 /* Rodapé */
 footer {
     background-color: #0c2865;
-    color: #333;
-    /* Texto mais claro no rodapé */
+    color: #333; /* Texto mais claro no rodapé */
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -169,83 +139,80 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    header{
-        font-size: 1.5rem;
-    }
 
+    #nike_azul{
+        max-width: 350px;
+    }
+    #nike_preta{
+        max-width: 350px;
+    }
+    #nike_rosa{
+        max-width: 350px;
+    }
+    #nike_verde{
+        max-width: 350px;
+    }
+    
+    /* NAV */
     #pagina_inicial{
         max-width: 350px;
     }
 
-    #camisa_botafogo{
-    max-width: 350px;
-   }
-   #camisa_inter{
-    max-width: 350px;
-   }
-   #camisa_palmeiras{
-    max-width: 350px;
-   }
-   #camisa_vasco{
-    max-width: 350px;
-   }
-   #camisa_sao_paulo{
-    max-width: 350px;
-   }
-
-   .camisa_botafogo{
-    display: none;
-   }
-   .camisa_inter{
-    display: none;
-   }
-   .camisa_palmeiras{
-    display: none;
-   }
-   .camisa_vasco{
-    display: none;
-   }
-   .camisa_sao_paulo{
-    display: none;
-   }
+    .camisas{
+        display: none;
+    }
+    .chuteiras{
+        display: none;
+    }
+    .material{
+        display: none;
+    }
+    .tenis{
+        display: none;
+    }
+    .sair{
+        display: none;
+    }
 
 
+    .texto{
+        display:none ;
+    }
 
-   .chuteiras{
-    display: none;
-   }
-   .camisas{
-    display: none;
-   }
-   .material{
-    display: none;
-   }
-   .tenis{
-    display: none;
-   }
-   .sair{
-    display: none;
-   }
+    .nike_azul{
+        display: none;
+    }
+    .nike_preta{
+        display: none;
+    }
+    .nike_rosa{
+        display: none;
+    }
+    .nike_verde{
+        display: none;
+    }
 
+
+    header{
+        font-size: 1.5rem;
+    }
 }
 
 /*  CARRINHO */
 .carrinho {
     width: 100%;
     max-width: 10000px;
-    margin: 25px auto;
-    /* Centraliza no meio da página com espaço acima */
+    margin: 25px auto; /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
     padding: 25px;
     /* border-radius: 15px; */
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: block;
-
+    
 }
 
-.carrinho h2,
-.carrinho h3 {
+.carrinho h2, .carrinho h3 {
     color: #333;
     margin-bottom: 15px;
 }
@@ -291,7 +258,6 @@ footer div {
     background-color: #e0e0e0;
     color: #333;
 }
-
 #mensagem-carrinho {
     position: fixed;
     top: 20px;
@@ -307,20 +273,19 @@ footer div {
     display: none;
     transition: opacity 0.5s ease;
 }
-
-button.comprar {
+button.comprar{
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.1em;
+    border-radius: 15px;
+    font-size: 1em;
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
 }
 
-button#finalizarCompra {
+button#finalizarCompra{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -330,9 +295,9 @@ button#finalizarCompra {
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
-}
+}   
 
-button {
+button{
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
@@ -342,4 +307,101 @@ button {
     background-color: #435376;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
+}
+
+
+
+
+
+
+/* Área do PIX */
+#areaPix {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#areaPix h2 {
+    color: #1e3a75;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* QR Code */
+#qrCodePix {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Código PIX Copia e Cola */
+#codigoPix {
+    font-size: 1em;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#areaPix button {
+    background-color: #1e3a75;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#areaPix button:hover {
+    background-color: #3459a3;
+}
+
+/* Lista de instruções */
+#areaPix ol {
+    margin: 15px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#areaPix li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+#itensCarrinho {
+    color: #fff;
+    background-color: #1e3a75;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#itensCarrinho:hover {
+    background-color: #3459a3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }

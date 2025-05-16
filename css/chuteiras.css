@@ -308,3 +308,100 @@ button{
     border: 2px solid #e0e0e0;
     transition: 0.3s;
 }
+
+
+
+
+
+
+/* Área do PIX */
+#areaPix {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#areaPix h2 {
+    color: #1e3a75;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* QR Code */
+#qrCodePix {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Código PIX Copia e Cola */
+#codigoPix {
+    font-size: 1em;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#areaPix button {
+    background-color: #1e3a75;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#areaPix button:hover {
+    background-color: #3459a3;
+}
+
+/* Lista de instruções */
+#areaPix ol {
+    margin: 15px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#areaPix li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+#itensCarrinho {
+    color: #fff;
+    background-color: #1e3a75;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#itensCarrinho:hover {
+    background-color: #3459a3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}

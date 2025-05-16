@@ -42,7 +42,7 @@ nav a {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: #fff;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
@@ -103,7 +103,7 @@ section button:hover {
 }
 
 section img {
-    width: 370px;
+    width: 350px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -115,33 +115,11 @@ section img:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-.galeria-imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-
-/* Estilização de artigos (blocos de produtos) */
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-article img {
-    width: 160px;
-    margin: 10px;
-}
 
 /* Títulos */
 h2, h3, h4 {
     color: #333;
+    font-size: 1em;
     margin-bottom: 15px;
 }
 
@@ -159,46 +137,31 @@ footer div {
     margin-bottom: 10px;
 }
 
-@media(max-width:768px){
-   
+/* Responsividade */
+@media (max-width: 768px) {
+
+    #nike_azul{
+        max-width: 350px;
+    }
+    #nike_preta{
+        max-width: 350px;
+    }
+    #nike_rosa{
+        max-width: 350px;
+    }
+    #nike_verde{
+        max-width: 350px;
+    }
+    
+    /* NAV */
     #pagina_inicial{
-        padding: 10px;
-    }
-    
-    /* img visivel */
-    #tenis_um{
-        max-width: 350px;
-    }
-    #tenis_dois{
-        max-width: 350px;
-    }
-    #tenis_tres{
-     max-width: 350px;;
-    }
-    #tenis_quatro{
         max-width: 350px;
     }
 
-    /* img oculta */
-    .tenis_um{
-        display: none;
-    }
-    .tenis_dois{
-        display: none;
-    }
-    .tenis_tres{
-        display: none;
-    }
-    .tenis_quatro{
-        display: none;
-    }
-    
-    /* ocultos */
-
-    .chuteiras{
-        display: none;
-    }
     .camisas{
+        display: none;
+    }
+    .chuteiras{
         display: none;
     }
     .material{
@@ -210,19 +173,30 @@ footer div {
     .sair{
         display: none;
     }
-    
-    header{
-        font-size: 50px;
+
+
+    .texto{
+        display:none ;
+    }
+
+    .nike_azul{
+        display: none;
+    }
+    .nike_preta{
+        display: none;
+    }
+    .nike_rosa{
+        display: none;
+    }
+    .nike_verde{
+        display: none;
     }
 
 
-
+    header{
+        font-size: 1.5rem;
+    }
 }
-
-
-
-
-
 
 /*  CARRINHO */
 .carrinho {
@@ -304,8 +278,8 @@ button.comprar{
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.1em;
+    border-radius: 15px;
+    font-size: 1em;
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
@@ -333,4 +307,101 @@ button{
     background-color: #435376;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
+}
+
+
+
+
+
+
+/* Área do PIX */
+#areaPix {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#areaPix h2 {
+    color: #1e3a75;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* QR Code */
+#qrCodePix {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Código PIX Copia e Cola */
+#codigoPix {
+    font-size: 1em;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#areaPix button {
+    background-color: #1e3a75;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#areaPix button:hover {
+    background-color: #3459a3;
+}
+
+/* Lista de instruções */
+#areaPix ol {
+    margin: 15px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#areaPix li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+#itensCarrinho {
+    color: #fff;
+    background-color: #1e3a75;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#itensCarrinho:hover {
+    background-color: #3459a3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
