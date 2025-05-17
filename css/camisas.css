@@ -262,8 +262,7 @@ footer div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 1em;
-        border: 2px solid red;
+        font-size: 0.8em;
     }
 
     .btn-remover {
@@ -276,7 +275,7 @@ footer div {
         cursor: pointer;
         transition: 0.3s;
         font-size: 0.5em;
-        border: 2px solid red;
+        max-width: 200px;
     }
     
     .btn-remover:hover {
@@ -294,11 +293,10 @@ footer div {
         background-color: #0c2865;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
-        border: 2px solid red;
+        max-width: 100px;
     }
     
     button#finalizarCompra {
-        border: 2px solid red;
         color: #fff;
         text-decoration: none;
         font-weight: bold;
@@ -308,12 +306,12 @@ footer div {
         background-color: #1e3a75;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
+        max-width: 200px;
     }
 
     .carrinho {
-        border: 2px solid red;
         width: 100%;
-        max-width: 200px;
+        max-width: 1200px;
         margin: 15px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
