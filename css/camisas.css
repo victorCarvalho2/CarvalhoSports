@@ -239,7 +239,23 @@ footer div {
     header {
         font-size: 1em;
     }
-
+    .comprar {
+        padding: 10px 15px;
+        font-size: 1em;
+      }
+  
+      .carrinho {
+        padding: 10px;
+      }
+  
+      .carrinho h3 {
+        font-size: 1em;
+      }
+  
+      .carrinho p, .carrinho .total {
+        font-size: 0.9em;
+      }
+  
 
  }
 
