@@ -141,21 +141,21 @@ footer div {
 @media (max-width: 768px) {
 
     #nike_azul{
-        max-width: 350px;
+        max-width: 300px;
     }
     #nike_preta{
-        max-width: 350px;
+        max-width: 300px;
     }
     #nike_rosa{
-        max-width: 350px;
+        max-width: 300px;
     }
     #nike_verde{
-        max-width: 350px;
+        max-width: 300px;
     }
     
     /* NAV */
     #pagina_inicial{
-        max-width: 350px;
+        max-width: 300px;
     }
 
 

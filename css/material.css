@@ -148,23 +148,23 @@ footer div {
 @media (max-width: 768px) {
 
     #pagina_inicial {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     #garrafa_botafogo {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     #copoPalmeiras {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     #garrafa_corinthians {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     #bolsa_botafogo {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     /* img ocultas  */

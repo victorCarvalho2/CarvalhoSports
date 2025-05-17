@@ -140,24 +140,25 @@ footer div {
 /* Responsividade */
 @media (max-width: 768px) {
 
-    #nike_azul{
-        max-width: 350px;
+    #tenis_um{
+        max-width: 300px;
     }
-    #nike_preta{
-        max-width: 350px;
+    #tenis_dois{
+        max-width: 300px;
     }
-    #nike_rosa{
-        max-width: 350px;
+    #tenis_tres{
+        max-width: 300px;
     }
-    #nike_verde{
-        max-width: 350px;
+    #tenis_quatro{
+        max-width: 300px;
     }
     
-    /* NAV */
+    
+    /* botao inicial */
     #pagina_inicial{
-        max-width: 350px;
+        max-width: 300px;
     }
-
+    /* botoes */
     .camisas{
         display: none;
     }
@@ -173,25 +174,25 @@ footer div {
     .sair{
         display: none;
     }
-
+    /* fim dos botoes */
 
     .texto{
         display:none ;
     }
-
-    .nike_azul{
+    /* imagens ocultas  */
+    .tenis_um{
         display: none;
     }
-    .nike_preta{
+    .tenis_dois{
         display: none;
     }
-    .nike_rosa{
+    .tenis_tres{
         display: none;
     }
-    .nike_verde{
+    .tenis_quatro{
         display: none;
     }
-
+    /* fim das imagens ocultas */
 
     header{
         font-size: 1.5rem;

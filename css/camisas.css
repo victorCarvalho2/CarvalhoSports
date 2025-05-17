@@ -188,7 +188,10 @@ footer div {
     }
 
     /* camisas_oculto */
-    
+
+    .camisa_botafogo{
+        display: none;
+    }
     .camisa_inter{
         display: none;
     }
