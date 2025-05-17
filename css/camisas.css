@@ -139,56 +139,66 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    /* camisas */
+    #camisa_botafogo{
+        max-width: 350px;
+    }
+    #camisa_inter{
+        max-width: 350px;
+    }
+    #camisa_palmeiras{
+        max-width: 350px;
+    }
+    #camisa_vasco{
+        max-width: 350px;
+    }
+    #camisa_sao_paulo{
+        max-width: 350px;
+    }
 
-    #nike_azul{
-        max-width: 350px;
-    }
-    #nike_preta{
-        max-width: 350px;
-    }
-    #nike_rosa{
-        max-width: 350px;
-    }
-    #nike_verde{
-        max-width: 350px;
-    }
-    
     /* NAV */
     #pagina_inicial{
         max-width: 350px;
     }
 
+    /* botao camisas */
     .camisas{
         display: none;
     }
+
+    /* botao_chuteiras */
     .chuteiras{
         display: none;
     }
+    /* botao_material */
     .material{
         display: none;
     }
+    /* botao_tenis */
     .tenis{
         display: none;
     }
+    /* botao_sair */
     .sair{
         display: none;
     }
-
-
+    /* mensagem */
     .texto{
         display:none ;
     }
 
-    .nike_azul{
+    /* camisas_oculto */
+    
+    .camisa_inter{
         display: none;
     }
-    .nike_preta{
+    .camisa_palmeiras{
         display: none;
     }
-    .nike_rosa{
+    .camisa_vasco{
         display: none;
     }
-    .nike_verde{
+    .camisa_sao_paulo{
         display: none;
     }
 
@@ -201,8 +211,8 @@ footer div {
 /*  CARRINHO */
 .carrinho {
     width: 100%;
-    max-width: 10000px;
-    margin: 25px auto; /* Centraliza no meio da página com espaço acima */
+    max-width: 12000px;
+    margin: 25px auto ; /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
     padding: 25px;
     /* border-radius: 15px; */
@@ -210,6 +220,10 @@ footer div {
     text-align: center;
     display: block;
     
+}
+.total{
+    margin: 25px auto ;
+    font-size: 1.5rem;
 }
 
 .carrinho h2, .carrinho h3 {
@@ -222,7 +236,7 @@ footer div {
     padding: 0;
 }
 
-.item-carrinho {
+.itens-carrinho {
     background-color: #fff;
     border-radius: 15px;
     padding: 15px;
@@ -234,17 +248,18 @@ footer div {
     font-size: 1em;
 }
 
-.item-carrinho strong {
+.itens-carrinho strong {
     font-weight: bold;
     font-size: 1em;
 }
 
-.item-carrinho span {
+.itens-carrinho span {
     margin-left: 10px;
 }
 
 .btn-remover {
     background-color: #fff;
+    color: #0c2865;
     border: 2px solid #e0e0e0;
     border-radius: 15px;
     padding: 10px 15px;

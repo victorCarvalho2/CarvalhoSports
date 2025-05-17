@@ -158,18 +158,25 @@ footer div {
         max-width: 350px;
     }
 
+
+    /* botao camisa */
     .camisas{
         display: none;
     }
+
+    /* botao chuteiras */
     .chuteiras{
         display: none;
     }
+    /* batao materiais */
     .material{
         display: none;
     }
+    /* botao tenis */
     .tenis{
         display: none;
     }
+    /* botao_sair */
     .sair{
         display: none;
     }

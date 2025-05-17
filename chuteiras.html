@@ -167,14 +167,6 @@
         }
         return resultado.toString(16).toUpperCase().padStart(4, '0');
       }
-      function copiarLink() {
-        const input = document.getElementById("linkAgradecimento");
-        input.select();
-        input.setSelectionRange(0, 99999); // Para dispositivos móveis
-        navigator.clipboard.writeText(input.value)
-          .then(() => alert("🔗 Link copiado para a área de transferência!"))
-          .catch(err => alert("❌ Erro ao copiar link: " + err));
-      }
 
       const payloadCompleto = payload + crc16(payload);
 
