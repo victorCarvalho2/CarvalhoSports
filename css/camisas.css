@@ -168,18 +168,6 @@ footer div {
         max-width: 300px;
     }
 
-    section a {
-        display: inline-block;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        margin: 10px;
-        transition: 0.3s;
-        background-color: #fff;
-        padding: 10px 15px;
-        border-radius: 5px;
-        border: 2px solid #e0e0e0;
-    }
     h2,
     h3,
     h4 {
@@ -253,77 +241,7 @@ footer div {
     }
 
 
-    .itens-carrinho {
-        background-color: #fff;
-        border-radius: 15px;
-        padding: 5px;
-        margin-bottom: 5px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.8em;
-    }
-
-    .btn-remover {
-        background-color: #fff;
-        color: #0c2865;
-        border: 2px solid #e0e0e0;
-        border-radius: 15px;
-        padding: 2px 5px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 0.5em;
-        max-width: 200px;
-    }
-    
-    .btn-remover:hover {
-        background-color: #e0e0e0;
-        color: #333;
-    }
-
-    button#comprar {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-size: 0.5em;
-        background-color: #0c2865;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        max-width: 100px;
-    }
-    
-    button#finalizarCompra {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 10px;
-        font-size: 0.5em;
-        background-color: #1e3a75;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        max-width: 200px;
-    }
-
-    .carrinho {
-        width: 100%;
-        max-width: 1200px;
-        margin: 15px auto;
-        /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
-        /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-    
-    }
-
-}
+ }
 
 /*  CARRINHO */
 .carrinho {
