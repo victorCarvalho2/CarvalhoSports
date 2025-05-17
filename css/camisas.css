@@ -184,7 +184,7 @@ footer div {
     h3,
     h4 {
         color: #333;
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin-bottom: 15px;
     }
 
@@ -249,8 +249,63 @@ footer div {
 
 
     header {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
+
+
+    .itens-carrinho {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .btn-remover {
+        background-color: #fff;
+        color: #0c2865;
+        border: 2px solid #e0e0e0;
+        border-radius: 15px;
+        padding: 10px 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1em;
+    }
+    
+    .btn-remover:hover {
+        background-color: #e0e0e0;
+        color: #333;
+    }
+
+    button#comprar {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-size: 1em;
+        background-color: #0c2865;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+    }
+    
+    button#finalizarCompra {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 1.1em;
+        background-color: #1e3a75;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+    }
+
 }
 
 /*  CARRINHO */
@@ -338,7 +393,7 @@ footer div {
     transition: opacity 0.5s ease;
 }
 
-button.comprar {
+button#comprar {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
