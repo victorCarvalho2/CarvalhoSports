@@ -256,8 +256,8 @@ footer div {
     .itens-carrinho {
         background-color: #fff;
         border-radius: 15px;
-        padding: 15px;
-        margin-bottom: 15px;
+        padding: 5px;
+        margin-bottom: 5px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-between;
@@ -270,11 +270,11 @@ footer div {
         color: #0c2865;
         border: 2px solid #e0e0e0;
         border-radius: 15px;
-        padding: 10px 15px;
+        padding: 2px 5px;
         font-weight: bold;
         cursor: pointer;
         transition: 0.3s;
-        font-size: 1em;
+        font-size: 0.5em;
     }
     
     .btn-remover:hover {
@@ -286,9 +286,9 @@ footer div {
         color: #e0e0e0;
         text-decoration: none;
         font-weight: bold;
-        padding: 10px 20px;
+        padding: 5px 10px;
         border-radius: 15px;
-        font-size: 1em;
+        font-size: 0.5em;
         background-color: #0c2865;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
@@ -298,9 +298,9 @@ footer div {
         color: #fff;
         text-decoration: none;
         font-weight: bold;
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-size: 1.1em;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.5em;
         background-color: #1e3a75;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
@@ -308,11 +308,11 @@ footer div {
 
     .carrinho {
         width: 100%;
-        max-width: 12000px;
+        max-width: 1000px;
         margin: 15px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 15px;
+        padding: 5px;
         /* border-radius: 15px; */
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
