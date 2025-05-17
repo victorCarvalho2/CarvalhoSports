@@ -249,7 +249,7 @@ footer div {
 
 
     header {
-        font-size: 1rem;
+        font-size: 0.8em;
     }
 
 
@@ -304,6 +304,20 @@ footer div {
         background-color: #1e3a75;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
+    }
+
+    .carrinho {
+        width: 100%;
+        max-width: 12000px;
+        margin: 15px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 15px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+    
     }
 
 }
