@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif; /* Alterado para 'Roboto' */
+    font-family: 'Times New Roman', Times, serif;
+    /* Alterado para 'Roboto' */
     font-size: xx-large;
 }
 
 body {
-    background-color: #1e3a75; /* Cor de fundo do corpo */
-    color: #333; /* Texto escuro para maior legibilidade */
+    background-color: #1e3a75;
+    /* Cor de fundo do corpo */
+    color: #333;
+    /* Texto escuro para maior legibilidade */
 }
 
 
 /* Cabeçalho */
 header {
     background-color: #1e3a75;
-    color: #ffff; /* Alterado para texto mais escuro */
+    color: #ffff;
+    /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
     font-size: 100px;
@@ -103,7 +107,7 @@ section button:hover {
 }
 
 section img {
-    width: 350px;
+    width: 340px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -117,7 +121,9 @@ section img:hover {
 }
 
 /* Títulos */
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: #333;
     font-size: 1em;
     margin-bottom: 15px;
@@ -126,7 +132,8 @@ h2, h3, h4 {
 /* Rodapé */
 footer {
     background-color: #0c2865;
-    color: #333; /* Texto mais claro no rodapé */
+    color: #333;
+    /* Texto mais claro no rodapé */
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -139,74 +146,99 @@ footer div {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
     /* camisas */
-    #camisa_botafogo{
-        max-width: 350px;
+    #camisa_botafogo {
+        max-width: 300px;
     }
-    #camisa_inter{
-        max-width: 350px;
+
+    #camisa_inter {
+        max-width: 300px;
     }
-    #camisa_palmeiras{
-        max-width: 350px;
+
+    #camisa_palmeiras {
+        max-width: 300px;
     }
-    #camisa_vasco{
-        max-width: 350px;
+
+    #camisa_vasco {
+        max-width: 300px;
     }
-    #camisa_sao_paulo{
-        max-width: 350px;
+
+    #camisa_sao_paulo {
+        max-width: 300px;
+    }
+
+    section {
+        background-color: #fff;
+        /* border-radius: 15px; */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        height: 90%;
+        width: 90%;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin: 25px auto;
     }
 
     /* NAV */
-    #pagina_inicial{
-        max-width: 350px;
+    #pagina_inicial {
+        max-width: 300px;
     }
 
     /* botao camisas */
-    .camisas{
+    .camisas {
         display: none;
     }
 
     /* botao_chuteiras */
-    .chuteiras{
+    .chuteiras {
         display: none;
     }
+
     /* botao_material */
-    .material{
+    .material {
         display: none;
     }
+
     /* botao_tenis */
-    .tenis{
+    .tenis {
         display: none;
     }
+
     /* botao_sair */
-    .sair{
+    .sair {
         display: none;
     }
+
     /* mensagem */
-    .texto{
-        display:none ;
+    .texto {
+        display: none;
     }
 
     /* camisas_oculto */
 
-    .camisa_botafogo{
+    .camisa_botafogo {
         display: none;
     }
-    .camisa_inter{
+
+    .camisa_inter {
         display: none;
     }
-    .camisa_palmeiras{
+
+    .camisa_palmeiras {
         display: none;
     }
-    .camisa_vasco{
+
+    .camisa_vasco {
         display: none;
     }
-    .camisa_sao_paulo{
+
+    .camisa_sao_paulo {
         display: none;
     }
 
 
-    header{
+    header {
         font-size: 1.5rem;
     }
 }
@@ -215,21 +247,24 @@ footer div {
 .carrinho {
     width: 100%;
     max-width: 12000px;
-    margin: 25px auto ; /* Centraliza no meio da página com espaço acima */
+    margin: 25px auto;
+    /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
     padding: 25px;
     /* border-radius: 15px; */
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: block;
-    
+
 }
-.total{
-    margin: 25px auto ;
+
+.total {
+    margin: 25px auto;
     font-size: 1.5rem;
 }
 
-.carrinho h2, .carrinho h3 {
+.carrinho h2,
+.carrinho h3 {
     color: #333;
     margin-bottom: 15px;
 }
@@ -276,6 +311,7 @@ footer div {
     background-color: #e0e0e0;
     color: #333;
 }
+
 #mensagem-carrinho {
     position: fixed;
     top: 20px;
@@ -291,7 +327,8 @@ footer div {
     display: none;
     transition: opacity 0.5s ease;
 }
-button.comprar{
+
+button.comprar {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
@@ -303,7 +340,7 @@ button.comprar{
     transition: 0.3s;
 }
 
-button#finalizarCompra{
+button#finalizarCompra {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -313,9 +350,9 @@ button#finalizarCompra{
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
-}   
+}
 
-button{
+button {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
