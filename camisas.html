@@ -13,8 +13,9 @@
 
 <body>
     <header>
-        Carvalho Sport's
-        <!-- Navegação -->
+      Carvalho Sport's
+    </header>
+      <!-- Navegação -->
         <nav>
             <a id="pagina_inicial" href="inicial.html">Página Inicial</a>
             <a class="chuteiras" href="chuteiras.html">Chuteiras</a>
@@ -23,7 +24,6 @@
             <a class="tenis" href="tenis.html">Tênis Esportivos</a>
             <a class="sair" href="index.php">Sair</a>
         </nav>
-    </header>
     <!-- Conteúdo principal -->
     <section>
 
@@ -43,7 +43,7 @@
         </div>
         <h2>Camisa Botafogo I 23/24</h2>
         <h3>Disponível por <br> R$ 369,90.</h3>
-        <button class="comprar" data-nome="Camisa do Botafogo" data-preco="369.90">Adicionar ao Carrinho</button>
+        <button class="comprar"  id="comprarMobile" data-nome="Camisa do Botafogo" data-preco="369.90">Adicionar ao Carrinho</button>
     </section>
 
     <!-- Camisa Internacional -->
@@ -57,7 +57,7 @@
         </div>
         <h2>Camisa Internacional I 2023/2024</h2>
         <h3>Disponível por <br> R$ 349,99.</h3>
-        <button class="comprar" data-nome="Camisa Internacional" data-preco="349.99">Adicionar ao Carrinho</button>
+        <button class="comprar"  id="comprarMobile" data-nome="Camisa Internacional" data-preco="349.99">Adicionar ao Carrinho</button>
     </section>
 
     <!-- Camisa Palmeiras -->
@@ -71,7 +71,7 @@
         </div>
         <h2>Camisa Palmeiras I 2023/2024</h2>
         <h3>Disponível por <br> R$ 349,99.</h3>
-        <button class="comprar" data-nome="Camisa Palmeiras" data-preco="349.99">Adicionar ao Carrinho</button>
+        <button class="comprar"  id="comprarMobile" data-nome="Camisa Palmeiras" data-preco="349.99">Adicionar ao Carrinho</button>
     </section>
 
     <!-- Camisa Vasco -->
@@ -85,7 +85,7 @@
         </div>
         <h2>Camisa Vasco II 2023/2024</h2>
         <h3>Disponível por <br> R$ 249,99.</h3>
-        <button class="comprar" data-nome="Camisa Vasco II " data-preco="249.99">Adicionar ao Carrinho</button>
+        <button class="comprar"  id="comprarMobile" data-nome="Camisa Vasco II " data-preco="249.99">Adicionar ao Carrinho</button>
     </section>
 
     <!-- Camisa São Paulo -->
@@ -100,18 +100,17 @@
         </div>
         <h2>Camisa São Paulo I 2023/2024</h2>
         <h3>Disponível por <br> R$ 349,99.</h3>
-        <button class="comprar" data-nome="Camisa São Paulo" data-preco="489.99">Adicionar ao Carrinho</button>
+        <button class="comprar" id="comprarMobile" data-nome="Camisa São Paulo" data-preco="489.99">Adicionar ao Carrinho</button>
     </section>
 
     <!-- SSSSSSSSSSSCCCCCCCCCCCCCCCCCCRRRRRRRRRRRRRRRRIIIIIIIIIIIIIIIIIIIIIPPPPPPPPPPPPPPPTTTTTTTTTTTTTTTTTT'S -->
-
 
     <!-- Carrinho -->
   <div class="carrinho">
     <h3>Carrinho de Compras</h3>
     <p id="itensCarrinho"></p >
     <p class="total">Total: R$ 0,00</p>
-    <button id="finalizarCompra">Finalizar Compra</button>
+    <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
     <div id="qrcode" style="margin-top: 20px;"></div>
   </div>
 
@@ -120,7 +119,7 @@
 
     function atualizarCarrinho() {
       const carrinhoUl = document.getElementById("itensCarrinho");
-      const total = document.querySelector(".total");
+      const total = document.querySelector("total");
       carrinhoUl.innerHTML = '';
       let totalCarrinho = 0;
 

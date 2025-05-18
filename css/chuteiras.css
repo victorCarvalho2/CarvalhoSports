@@ -137,74 +137,6 @@ footer div {
     margin-bottom: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-
-    #nike_azul{
-        max-width: 300px;
-    }
-    #nike_preta{
-        max-width: 300px;
-    }
-    #nike_rosa{
-        max-width: 300px;
-    }
-    #nike_verde{
-        max-width: 300px;
-    }
-    
-    /* NAV */
-    #pagina_inicial{
-        max-width: 300px;
-    }
-
-
-    /* botao camisa */
-    .camisas{
-        display: none;
-    }
-
-    /* botao chuteiras */
-    .chuteiras{
-        display: none;
-    }
-    /* batao materiais */
-    .material{
-        display: none;
-    }
-    /* botao tenis */
-    .tenis{
-        display: none;
-    }
-    /* botao_sair */
-    .sair{
-        display: none;
-    }
-
-
-    .texto{
-        display:none ;
-    }
-
-    .nike_azul{
-        display: none;
-    }
-    .nike_preta{
-        display: none;
-    }
-    .nike_rosa{
-        display: none;
-    }
-    .nike_verde{
-        display: none;
-    }
-
-
-    header{
-        font-size: 1.5rem;
-    }
-}
-
 /*  CARRINHO */
 .carrinho {
     width: 100%;
@@ -411,4 +343,146 @@ button{
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Responsividade */
+@media (max-width: 425px) {
+    
+    header{
+        font-size: 1.5rem;
+        margin-top: 2px;
+        padding: 20px;
+        display: block;
+    }
+    
+    #pagina_inicial {
+        max-width: 300px;   
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.5;
+    }  
+
+    h2,h3{
+      
+        font-size:20px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+    #nike_azul{
+        max-width: 300px;
+    }
+    #nike_preta{
+        max-width: 300px;
+    }
+    #nike_rosa{
+        max-width: 300px;
+    }
+    #nike_verde{
+        max-width: 300px;
+    }
+
+    .nike_azul{
+        display: none;
+    }
+    .nike_preta{
+        display: none;
+    }
+    .nike_rosa{
+        display: none;
+    }
+    .nike_verde{
+        display: none;
+    }
+
+
+    /* botao camisa */
+    .camisas{
+        display: none;
+    }
+    /* botao chuteiras */
+    .chuteiras{
+        display: none;
+    }
+    /* batao materiais */
+    .material{
+        display: none;
+    }
+    /* botao tenis */
+    .tenis{
+        display: none;
+    }
+    /* botao_sair */
+    .sair{
+        display: none;
+    }
+
+
+    .carrinho  {
+        width: 100%;
+        margin: 5px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 5px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+    }
+    
+    #lista-carrinho {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #itensCarrinho {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        font-size: 1px;
+    }   
+
+
+    /* BOTAO REMOVER */
+    button  {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 0.5em;
+        background-color: #435376;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+        margin-left: auto;
+        
+    }
+
+     #comprarMobile{
+         color: #FFF;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 15px;
+         border-radius: 15px;
+         font-size: 20px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;
+     } 
+     
+    #finalizarCompra{
+        color: #FFF; 
+         text-decoration: none;
+         font-weight: bold;
+         padding: 15px;
+         border-radius: 15px;
+         font-size: 20px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;         
+     }
 }
