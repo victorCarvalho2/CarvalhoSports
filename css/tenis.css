@@ -268,13 +268,107 @@ button {
     
 }
 
+
+
+/* Área do PIX */
+#areaPix {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#areaPix h2 {
+    color: #1e3a75;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* QR Code */
+#qrCodePix {
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+/* Código PIX Copia e Cola */
+#codigoPix {
+    font-size: 1em;
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#areaPix button {
+    background-color: #1e3a75;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#areaPix button:hover {
+    background-color: #3459a3;
+}
+
+/* Lista de instruções */
+#areaPix ol {
+    margin: 15px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#areaPix li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+#itensCarrinho {
+    color: #1e3a75;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#itensCarrinho:hover {
+    background-color: #3459a3;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 /* Responsividade */
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width:529px) {
 
     header{
-        font-size: 1.5rem;
+        font-size: 40px;
         margin-top: 2px;
-        padding: 20px;
+        padding: 10px;
         display: block;
     }
 
@@ -283,27 +377,27 @@ button {
         max-width: 300px;   
         border-radius: 15px;
         padding: 10px;
-        font-size: 1.5;
+        font-size: 25px;
     }  
 
     h2,h3{
       
-        font-size:20px;
+        font-size:15px;
         margin: 4px;
         padding: 2px;
     }
 
     #tenis_um{
-        max-width: 300px;
+        max-width: 150px;
     }
     #tenis_dois{
-        max-width: 300px;
+        max-width: 150px;
     }
     #tenis_tres{
-        max-width: 300px;
+        max-width: 150px;
     }
     #tenis_quatro{
-        max-width: 300px;
+        max-width: 150px;
     }
 
 
@@ -390,9 +484,153 @@ button {
          color: #FFF;
          text-decoration: none;
          font-weight: bold;
+         padding: 10px;
+         border-radius: 15px;
+         font-size: 15px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;
+     } 
+     
+    #finalizarCompra{
+        color: #FFF; 
+         text-decoration: none;
+         font-weight: bold;
          padding: 15px;
          border-radius: 15px;
          font-size: 20px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;         
+     }
+ 
+
+}
+
+@media (min-width: 425px) and (max-width:529px){
+
+    header{
+        font-size: 50px;
+        margin-top: 2px;
+        padding: 10px;
+        display: block;
+    }
+
+    
+    #pagina_inicial {
+        max-width: 300px;   
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 25px;
+    }  
+
+    h2,h3{
+      
+        font-size:15px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+    #tenis_um{
+        max-width: 150px;
+    }
+    #tenis_dois{
+        max-width: 150px;
+    }
+    #tenis_tres{
+        max-width: 150px;
+    }
+    #tenis_quatro{
+        max-width: 150px;
+    }
+
+
+    
+       /* imagens ocultas  */
+       .tenis_um{
+        display: none;
+    }
+    .tenis_dois{
+        display: none;
+    }
+    .tenis_tres{
+        display: none;
+    }
+    .tenis_quatro{
+        display: none;
+    }
+    /* fim das imagens ocultas */
+    
+
+
+    /* botoes */
+    .camisas{
+        display: none;
+    }
+    .chuteiras{
+        display: none;
+    }
+    .material{
+        display: none;
+    }
+    .tenis{
+        display: none;
+    }
+    .sair{
+        display: none;
+    }
+    /* fim dos botoes */
+
+
+    .carrinho  {
+        width: 100%;
+        margin: 5px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 5px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+    }
+    
+    #lista-carrinho {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #itensCarrinho {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        font-size: 1px;
+    }   
+
+
+    /* BOTAO REMOVER */
+    button  {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 0.5em;
+        background-color: #435376;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+        margin-left: auto; 
+    }
+
+     #comprarMobile{
+         color: #FFF;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 10px;
+         border-radius: 15px;
+         font-size: 15px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
          transition: 0.3s;

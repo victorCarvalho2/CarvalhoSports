@@ -336,8 +336,8 @@ button {
 }
 
 #itensCarrinho {
-    color: #fff;
-    background-color: #1e3a75;
+    color: #1e3a75;
+    background-color: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 25px;
     padding: 12px 25px;
@@ -348,6 +348,7 @@ button {
     display: inline-block;
     margin-top: 20px;
 }
+
 
 #itensCarrinho:hover {
     background-color: #3459a3;
@@ -361,7 +362,7 @@ button {
 
 
 /* Responsividade */
-@media (min-width: 320px) and (max-width: 529px) {
+@media (min-width: 320px) and (max-width: 529px){
 
     header {
         font-size: 35px;
@@ -369,7 +370,7 @@ button {
         margin-top: 10px;
         display: auto;
         width: 308px;
-        border: 3px solid red;
+
         justify-content: center;
     }
 
@@ -456,7 +457,7 @@ button {
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        width: 300px;
+        width: 320px;
     }
     
     #lista-carrinho {
@@ -494,25 +495,342 @@ button {
          color: #FFF;
          text-decoration: none;
          font-weight: bold;
-         padding: 15px;
+         padding: 10px;
          border-radius: 15px;
-         font-size: 20px;
+         font-size: 15px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
          transition: 0.3s;
      } 
      
     #finalizarCompra{
-        color: #FFF; 
+         color: #FFF; 
          text-decoration: none;
          font-weight: bold;
-         padding: 15px;
+         padding: 0px;
          border-radius: 15px;
-         font-size: 10px;
+         font-size: 5px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
-         transition: 0.3s;         
+         transition: 0.3s;    
      }
 
 }
+
+
+
+@media (min-width: 375px) and (max-width:529px) {
+
+    header {
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 10px;
+        display: auto;
+        width: 360px;
+  
+        justify-content: center;
+    }
+
+
+    #pagina_inicial {   
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 20px;
+    }  
+
+    section{
+        width: 375px;
+    }
+    h2, h3{
+        font-size:15px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+
+    #garrafa_botafogo {
+        max-width: 150px;
+    }
+
+    #copoPalmeiras {
+        max-width: 150px;
+    }
+
+    #garrafa_corinthians {
+        max-width: 150px;
+    }
+
+    #bolsa_botafogo {
+        max-width: 150px;
+    }
+
+    /* img ocultas  */
+
+    .garrafa_botafogo {
+        display: none;
+    }
+
+    .copoPalmeiras {
+        display: none;
+    }
+
+    .garrafa_corinthians {
+        display: none;
+    }
+
+    .bolsa_botafogo {
+        display: none;
+    }
+
+    /* ocultos */
+
+    .chuteiras {
+        display: none;
+    }
+
+    .camisas {
+        display: none;
+    }
+
+    .material {
+        display: none;
+    }
+
+    .tenis {
+        display: none;
+    }
+
+    .sair {
+        display: none;
+    }
+
+    .carrinho  {
+        width: 100%;
+        margin: 5px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 5px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+        max-width: 375px;
+    }
+    
+    #lista-carrinho {
+        list-style: none;
+        width: 20px;
+        padding: 0;
+    }
+    
+    #itensCarrinho {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 1px;
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        font-size: 1px;
+    }  
+
+    /* BOTAO REMOVER */
+    button  {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: #435376;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+
+        margin-left: auto;
+        
+    }
+
+     #comprarMobile{
+         color: #FFF;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 10px;
+         border-radius: 15px;
+         font-size: 15px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;
+     } 
+     
+    #finalizarCompra{
+         color: #FFF; 
+         text-decoration: none;
+         font-weight: bold;
+         padding: 0px;
+         border-radius: 15px;
+         font-size: 5px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;      
+     }
+}
+
+
+
+
+@media (min-width: 425px) and (max-width:529px) {
+
+    header {
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 10px;
+        display: auto;
+        width:415px;
+        justify-content: center;
+    }
+
+
+    #pagina_inicial {   
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 20px;
+    }  
+
+    section{
+        width: 415px;
+
+    }
+    h2, h3{
+        font-size:15px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+
+    #garrafa_botafogo {
+        max-width: 150px;
+    }
+
+    #copoPalmeiras {
+        max-width: 150px;
+    }
+
+    #garrafa_corinthians {
+        max-width: 150px;
+    }
+
+    #bolsa_botafogo {
+        max-width: 150px;
+    }
+
+    /* img ocultas  */
+
+    .garrafa_botafogo {
+        display: none;
+    }
+
+    .copoPalmeiras {
+        display: none;
+    }
+
+    .garrafa_corinthians {
+        display: none;
+    }
+
+    .bolsa_botafogo {
+        display: none;
+    }
+
+    /* ocultos */
+
+    .chuteiras {
+        display: none;
+    }
+
+    .camisas {
+        display: none;
+    }
+
+    .material {
+        display: none;
+    }
+
+    .tenis {
+        display: none;
+    }
+
+    .sair {
+        display: none;
+    }
+
+    .carrinho  {
+        width: 100%;
+        margin: 5px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 5px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+        max-width: 415px;
+    }
+    
+    #lista-carrinho {
+        list-style: none;
+        width: 20px;
+        padding: 0;
+    }
+    
+    #itensCarrinho {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 1px;
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        font-size: 1px;
+    }  
+
+    /* BOTAO REMOVER */
+    button  {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: #435376;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+
+        margin-left: auto;
+        
+    }
+
+     #comprarMobile{
+         color: #FFF;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 10px;
+         border-radius: 15px;
+         font-size: 15px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;
+     } 
+     
+    #finalizarCompra{
+         color: #FFF; 
+         text-decoration: none;
+         font-weight: bold;
+         padding: 0px;
+         border-radius: 15px;
+         font-size: 5px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;      
+     }
+}
+
+
 
