@@ -144,74 +144,6 @@ footer div {
     margin-bottom: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-
-    #pagina_inicial {
-        max-width: 300px;
-    }
-
-    #garrafa_botafogo {
-        max-width: 300px;
-    }
-
-    #copoPalmeiras {
-        max-width: 300px;
-    }
-
-    #garrafa_corinthians {
-        max-width: 300px;
-    }
-
-    #bolsa_botafogo {
-        max-width: 300px;
-    }
-
-    /* img ocultas  */
-
-    .garrafa_botafogo {
-        display: none;
-    }
-
-    .copoPalmeiras {
-        display: none;
-    }
-
-    .garrafa_corinthians {
-        display: none;
-    }
-
-    .bolsa_botafogo {
-        display: none;
-    }
-
-    /* ocultos */
-
-    .chuteiras {
-        display: none;
-    }
-
-    .camisas {
-        display: none;
-    }
-
-    .material {
-        display: none;
-    }
-
-    .tenis {
-        display: none;
-    }
-
-    .sair {
-        display: none;
-    }
-
-    header {
-        font-size: 1.5rem;
-    }
-}
-
 /*  CARRINHO */
 .carrinho {
     width: 100%;
@@ -423,3 +355,164 @@ button {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
+
+
+
+
+
+/* Responsividade */
+@media (min-width: 320px) and (max-width: 529px) {
+
+    header {
+        font-size: 35px;
+        padding: 10px;
+        margin-top: 10px;
+        display: auto;
+        width: 308px;
+        border: 3px solid red;
+        justify-content: center;
+    }
+
+
+    #pagina_inicial {   
+        border-radius: 15px;
+        padding: 15px;
+        font-size: 20px;
+    }  
+
+    section{
+        width: 310px;
+    }
+    h2, h3{
+        font-size:15px;
+        margin: 4px;
+        padding: 2px;
+    }
+
+
+    #garrafa_botafogo {
+        max-width: 150px;
+    }
+
+    #copoPalmeiras {
+        max-width: 150px;
+    }
+
+    #garrafa_corinthians {
+        max-width: 150px;
+    }
+
+    #bolsa_botafogo {
+        max-width: 150px;
+    }
+
+    /* img ocultas  */
+
+    .garrafa_botafogo {
+        display: none;
+    }
+
+    .copoPalmeiras {
+        display: none;
+    }
+
+    .garrafa_corinthians {
+        display: none;
+    }
+
+    .bolsa_botafogo {
+        display: none;
+    }
+
+    /* ocultos */
+
+    .chuteiras {
+        display: none;
+    }
+
+    .camisas {
+        display: none;
+    }
+
+    .material {
+        display: none;
+    }
+
+    .tenis {
+        display: none;
+    }
+
+    .sair {
+        display: none;
+    }
+
+    .carrinho  {
+        width: 100%;
+        margin: 5px auto;
+        /* Centraliza no meio da página com espaço acima */
+        background-color: #fff;
+        padding: 5px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block;
+        width: 300px;
+    }
+    
+    #lista-carrinho {
+        list-style: none;
+        width: 20px;
+        padding: 0;
+    }
+    
+    #itensCarrinho {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        font-size: 1px;
+    }  
+
+    /* BOTAO REMOVER */
+    button  {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        background-color: #435376;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+        margin-left: auto;
+        
+    }
+
+     #comprarMobile{
+         color: #FFF;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 15px;
+         border-radius: 15px;
+         font-size: 20px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;
+     } 
+     
+    #finalizarCompra{
+        color: #FFF; 
+         text-decoration: none;
+         font-weight: bold;
+         padding: 15px;
+         border-radius: 15px;
+         font-size: 10px;
+         background-color: #0c2865;
+         border: 2px solid #e0e0e0;
+         transition: 0.3s;         
+     }
+
+}
+
