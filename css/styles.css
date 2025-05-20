@@ -151,7 +151,7 @@ footer div {
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        width: 400px;        
+        width: 320px;       
     }
     #pagina_inicial {
         max-width: 335px;   
@@ -165,7 +165,7 @@ footer div {
     }
 
     section{
-        width: 400px;
+        width: 320px;
     }
     h2, h3,h4, p,footer{
         font-size:15px;
@@ -228,7 +228,7 @@ footer div {
 
 @media (min-width: 375px)  and (max-width:529px){
     header {
-        font-size: 30px;
+        font-size: 40px;
         padding: 10px;
         margin-top: 10px;
         display: auto;
@@ -258,17 +258,17 @@ footer div {
     /*img aparecera  */
     
         #azul{
-            max-width: 150px;           
+            max-width: 170px;           
         }
 
         #camisa-botafogo{
-            max-width: 150px;            
+            max-width: 170px;            
         }
         #garrafa_corinthians{
-            max-width: 150px;
+            max-width: 170px;
         }
         #tenis_nike{
-            max-width: 150px;
+            max-width: 170px;
         }
 
     /* img ocultas  */
@@ -339,17 +339,17 @@ footer div {
     /*img aparecera  */
     
         #azul{
-            max-width: 150px;           
+            max-width: 200px;           
         }
 
         #camisa-botafogo{
-            max-width: 150px;            
+            max-width: 200px;            
         }
         #garrafa_corinthians{
-            max-width: 150px;
+            max-width: 200px;
         }
         #tenis_nike{
-            max-width: 150px;
+            max-width: 200px;
         }
 
     /* img ocultas  */

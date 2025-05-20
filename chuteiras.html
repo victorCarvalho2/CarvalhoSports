@@ -14,14 +14,14 @@
   <header>
     Carvalho Sport's
   </header>
-    <nav>
-      <a id="pagina_inicial" href="inicial.html">Página Inicial</a>
-      <a class="chuteiras" href="chuteiras.html">Chuteiras</a>
-      <a class="camisas" href="camisas.html">Camisas de Time</a>
-      <a class="material" href="material.html">Material Esportivo</a>
-      <a class="tenis" href="tenis.html">Tênis Esportivos</a>
-      <a class="sair" href="index.php">Sair</a>
-    </nav>
+  <nav>
+    <a id="pagina_inicial" href="inicial.html">Página Inicial</a>
+    <a class="chuteiras" href="chuteiras.html">Chuteiras</a>
+    <a class="camisas" href="camisas.html">Camisas de Time</a>
+    <a class="material" href="material.html">Material Esportivo</a>
+    <a class="tenis" href="tenis.html">Tênis Esportivos</a>
+    <a class="sair" href="index.php">Sair</a>
+  </nav>
 
   <section class="texto">
     <h2>Na Carvalho Sport's, temos:</h2>
@@ -39,7 +39,8 @@
     </div>
     <h2>Chuteira Nike Phantom GT2 Elite</h2>
     <h3>Disponivel por: R$ 997,49</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao Carrinho</button>
+    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
+      Carrinho</button>
   </section>
 
   <!-- Produto 2 -->
@@ -53,7 +54,8 @@
     </div>
     <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
     <h3>Disponivel por apenas: <br> R$ 533,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV" data-preco="533.99">Adicionar ao Carrinho</button>
+    <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
+      data-preco="533.99">Adicionar ao Carrinho</button>
   </section>
 
   <!-- Produto 3 rosa-->
@@ -67,7 +69,8 @@
     </div>
     <h2>Chuteira Nike Phantom GX Academy</h2>
     <h3>Disponivel por apenas: <br>R$ 631,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="631.99">Adicionar ao Carrinho</button>
+    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="631.99">Adicionar ao
+      Carrinho</button>
   </section>
 
   <!-- Produto 4 verde -->
@@ -81,9 +84,9 @@
     </div>
     <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
     <h3>Disponivel por apenas: <br>R$ 489,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite" data-preco="489.99">Adicionar ao Carrinho</button>
+    <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite" data-preco="489.99">Adicionar ao
+      Carrinho</button>
   </section>
-
 
   <!-- Carrinho -->
   <div class="carrinho">
@@ -91,8 +94,11 @@
     <ul id="itensCarrinho"></ul>
     <p class="total">Total: R$ 0,00</p>
     <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
-    <div id="qrcode" style="margin-top: 20px;"></div>
+    <div id="qrcode" style="margin-top: 20px; text-align: center;"></div>
   </div>
+
+  <!-- Biblioteca QRCode (NÃO ESQUEÇA!) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
 
   <script>
     let carrinho = [];
@@ -136,53 +142,35 @@
         return;
       }
 
-      const totalCompra = carrinho.reduce((acc, item) => acc + item.preco, 0);
-      const chavePix = "victor@gmail.com"; // SUBSTITUA PELA SUA CHAVE PIX REAL
-      const nomeLoja = "Carvalho Sports";
-      const cidade = "Duque de Caxias";
-      const valor = totalCompra.toFixed(2);
-
-      const payload = `00020126580014BR.GOV.BCB.PIX0136${chavePix.length.toString().padStart(2, '0')}${chavePix}
-52040000
-5303986
-540${valor.length}${valor}
-5802BR
-5913${nomeLoja.padEnd(13)}
-6011${cidade}
-62070503***6304`.replace(/\s/g, '');
-
-      function crc16(payload) {
-        let polinomio = 0x1021;
-        let resultado = 0xFFFF;
-        for (let i = 0; i < payload.length; i++) {
-          resultado ^= payload.charCodeAt(i) << 8;
-          for (let j = 0; j < 8; j++) {
-            if ((resultado <<= 1) & 0x10000) {
-              resultado ^= polinomio;
-            }
-            resultado &= 0xFFFF;
-          }
-        }
-        return resultado.toString(16).toUpperCase().padStart(4, '0');
-      }
-
-      const payloadCompleto = payload + crc16(payload);
-
+      const linkForm = "https://forms.gle/hRB8A37AzR6hQXAQ7";
       const qrCodeDiv = document.getElementById("qrcode");
       qrCodeDiv.innerHTML = "";
-      QRCode.toCanvas(payloadCompleto, { width: 256 }, function (err, canvas) {
+
+      // Gerar QR Code com o link do Google Forms
+      QRCode.toCanvas(linkForm, { width: 256 }, function (err, canvas) {
         if (err) {
           alert("Erro ao gerar QR Code");
           return;
         }
+
         qrCodeDiv.appendChild(canvas);
+
+        // Adicionar o link clicável abaixo do QR
+        const link = document.createElement("a");
+        link.href = linkForm;
+        link.target = "_blank";
+        link.style.display = "block";
+        link.style.marginTop = "10px";
+        link.style.fontSize = "16px";
+        link.style.color = "#1e3a75";
+        link.textContent = "📋 Clique aqui para dar seu feedback!";
+        qrCodeDiv.appendChild(link);
       });
 
-      alert("✅ Compra iniciada! Escaneie o QR Code para pagar via PIX.");
+      alert("✅ Compra finalizada! Escaneie o QR Code ou clique no link para dar seu feedback.");
     });
-
-    localStorage.setItem("carrinho", JSON.stringify(carrinho)); // Garantir persistência
   </script>
 
 </body>
+
 </html>

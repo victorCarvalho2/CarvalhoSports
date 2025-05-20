@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tenis.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
     <title>Carvalho Sport's</title>
 </head>
@@ -40,7 +40,8 @@
         </div>
         <h2>Tênis Nike Revolution 7</h2>
         <h3>Disponível por <br> R$ 499,99</h3>
-        <button class="comprar"  id="comprarMobile" data-nome="Nike Revolution 7" data-preco="499.99">Adicionar ao Carrinho</button>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Revolution 7" data-preco="499.99">Adicionar ao
+            Carrinho</button>
     </section>
 
     <!-- Tênis 2 -->
@@ -54,7 +55,8 @@
         </div>
         <h2>Tênis Nike Downshifter 13</h2>
         <h3>Disponível por <br> R$ 329,99</h3>
-        <button class="comprar"  id="comprarMobile" data-nome="Nike Downshifter 13" data-preco="489.99">Adicionar ao Carrinho</button>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Downshifter 13" data-preco="489.99">Adicionar ao
+            Carrinho</button>
     </section>
 
     <!-- Tênis 3 -->
@@ -68,7 +70,8 @@
         </div>
         <h2>Tênis Nike Air Max AP Masculino</h2>
         <h3>Disponível por <br> R$ 474,90</h3>
-        <button class="comprar"  id="comprarMobile" data-nome=" Nike Air Max AP Masculino" data-preco="474.90">Adicionar ao Carrinho</button>   
+        <button class="comprar" id="comprarMobile" data-nome=" Nike Air Max AP Masculino" data-preco="474.90">Adicionar
+            ao Carrinho</button>
     </section>
 
     <!-- Tênis 4 -->
@@ -82,107 +85,94 @@
         </div>
         <h2>Tênis Nike Renew Ride 3 Masculino</h2>
         <h3>Disponível por <br> R$ 427,40</h3>
-        <button class="comprar"  id="comprarMobile" data-nome="Nike Renew Ride 3" data-preco="427.40">Adicionar ao Carrinho</button>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Renew Ride 3" data-preco="427.40">Adicionar ao
+            Carrinho</button>
     </section>
 
     <!-- SSSSSSSSSSSCCCCCCCCCCCCCCCCCCRRRRRRRRRRRRRRRRIIIIIIIIIIIIIIIIIIIIIPPPPPPPPPPPPPPPTTTTTTTTTTTTTTTTTT'S -->
 
-   <!-- Carrinho -->
-   <div class="carrinho">
-    <h3>Carrinho de Compras</h3>
-    <ul id="itensCarrinho"></ul>
-    <p class="total">Total: R$ 0,00</p>
-    <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
-    <div id="qrcode" style="margin-top: 20px;"></div>
+    <!-- Carrinho -->
+    <div class="carrinho">
+        <h3>Carrinho de Compras</h3>
+        <ul id="itensCarrinho"></ul>
+        <p class="total">Total: R$ 0,00</p>
+        <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
+        <div id="qrcode" style="margin-top: 20px; text-align: center;"></div>
     </div>
 
-<script>
-    let carrinho = [];
+    <!-- Biblioteca QRCode (NÃO ESQUEÇA!) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
 
-    function atualizarCarrinho() {
-        const carrinhoUl = document.getElementById("itensCarrinho");
-        const total = document.querySelector(".total");
-        carrinhoUl.innerHTML = '';
-        let totalCarrinho = 0;
+    <script>
+        let carrinho = [];
 
-        carrinho.forEach((item, index) => {
-            const li = document.createElement("li");
-            li.innerHTML = `${item.nome} - R$ ${item.preco.toFixed(2)} <button onclick="removerItem(${index})">Remover</button>`;
-            carrinhoUl.appendChild(li);
-            totalCarrinho += item.preco;
+        function atualizarCarrinho() {
+            const carrinhoUl = document.getElementById("itensCarrinho");
+            const total = document.querySelector(".total");
+            carrinhoUl.innerHTML = '';
+            let totalCarrinho = 0;
+
+            carrinho.forEach((item, index) => {
+                const li = document.createElement("li");
+                li.innerHTML = `${item.nome} - R$ ${item.preco.toFixed(2)} <button onclick="removerItem(${index})">Remover</button>`;
+                carrinhoUl.appendChild(li);
+                totalCarrinho += item.preco;
+            });
+
+            total.innerHTML = `Total: R$ ${totalCarrinho.toFixed(2)}`;
+        }
+
+        function adicionarCarrinho(event) {
+            const nome = event.target.getAttribute("data-nome");
+            const preco = parseFloat(event.target.getAttribute("data-preco"));
+            carrinho.push({ nome, preco });
+            atualizarCarrinho();
+            alert(`✅ "${nome}" foi adicionado ao carrinho!`);
+        }
+
+        function removerItem(index) {
+            carrinho.splice(index, 1);
+            atualizarCarrinho();
+        }
+
+        document.querySelectorAll(".comprar").forEach(button => {
+            button.addEventListener("click", adicionarCarrinho);
         });
 
-        total.innerHTML = `Total: R$ ${totalCarrinho.toFixed(2)}`;
-    }
-
-    function adicionarCarrinho(event) {
-        const nome = event.target.getAttribute("data-nome");
-        const preco = parseFloat(event.target.getAttribute("data-preco"));
-        carrinho.push({ nome, preco });
-        atualizarCarrinho();
-        alert(`✅ "${nome}" foi adicionado ao carrinho!`);
-    }
-
-    function removerItem(index) {
-        carrinho.splice(index, 1);
-        atualizarCarrinho();
-    }
-
-    document.querySelectorAll(".comprar").forEach(button => {
-        button.addEventListener("click", adicionarCarrinho);
-    });
-
-    document.getElementById("finalizarCompra").addEventListener("click", () => {
-        if (carrinho.length === 0) {
-            alert("Seu carrinho está vazio.");
-            return;
-        }
-
-        const totalCompra = carrinho.reduce((acc, item) => acc + item.preco, 0);
-        const chavePix = "victor@gmail.com"; // SUBSTITUA PELA SUA CHAVE PIX REAL
-        const nomeLoja = "Carvalho Sports";
-        const cidade = "Duque de Caxias";
-        const valor = totalCompra.toFixed(2);
-
-        const payload = `00020126580014BR.GOV.BCB.PIX0136${chavePix.length.toString().padStart(2, '0')}${chavePix}
-52040000
-5303986
-540${valor.length}${valor}
-5802BR
-5913${nomeLoja.padEnd(13)}
-6011${cidade}
-62070503***6304`.replace(/\s/g, '');
-
-        function crc16(payload) {
-            let polinomio = 0x1021;
-            let resultado = 0xFFFF;
-            for (let i = 0; i < payload.length; i++) {
-                resultado ^= payload.charCodeAt(i) << 8;
-                for (let j = 0; j < 8; j++) {
-                    if ((resultado <<= 1) & 0x10000) {
-                        resultado ^= polinomio;
-                    }
-                    resultado &= 0xFFFF;
-                }
-            }
-            return resultado.toString(16).toUpperCase().padStart(4, '0');
-        }
-
-        const payloadCompleto = payload + crc16(payload);
-
-        const qrCodeDiv = document.getElementById("qrcode");
-        qrCodeDiv.innerHTML = "";
-        QRCode.toCanvas(payloadCompleto, { width: 256 }, function (err, canvas) {
-            if (err) {
-                alert("Erro ao gerar QR Code");
+        document.getElementById("finalizarCompra").addEventListener("click", () => {
+            if (carrinho.length === 0) {
+                alert("Seu carrinho está vazio.");
                 return;
             }
-            qrCodeDiv.appendChild(canvas);
-        });
 
-        alert("✅ Compra iniciada! Escaneie o QR Code para pagar via PIX.");
-    });
-</script>
+            const linkForm = "https://forms.gle/hRB8A37AzR6hQXAQ7";
+            const qrCodeDiv = document.getElementById("qrcode");
+            qrCodeDiv.innerHTML = "";
+
+            // Gerar QR Code com o link do Google Forms
+            QRCode.toCanvas(linkForm, { width: 256 }, function (err, canvas) {
+                if (err) {
+                    alert("Erro ao gerar QR Code");
+                    return;
+                }
+
+                qrCodeDiv.appendChild(canvas);
+
+                // Adicionar o link clicável abaixo do QR
+                const link = document.createElement("a");
+                link.href = linkForm;
+                link.target = "_blank";
+                link.style.display = "block";
+                link.style.marginTop = "10px";
+                link.style.fontSize = "16px";
+                link.style.color = "#1e3a75";
+                link.textContent = "📋 Clique aqui para dar seu feedback!";
+                qrCodeDiv.appendChild(link);
+            });
+
+            alert("✅ Compra finalizada! Escaneie o QR Code ou clique no link para dar seu feedback.");
+        });
+    </script>
 </body>
 
 </html>
