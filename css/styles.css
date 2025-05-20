@@ -145,7 +145,7 @@ footer div {
 
 
 /* Responsividade*/
-@media (max-width: 320px)  and (max-width:529px){
+@media (min-width: 320px)  and (max-width:529px){
     header {
         font-size: 40px;
         padding: 10px;
@@ -226,14 +226,13 @@ footer div {
 }
 
 
-@media (max-width: 375px)  and (max-width:529px){
+@media (min-width: 375px)  and (max-width:529px){
     header {
-        font-size: 40px;
+        font-size: 30px;
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        width: 400px;
-        
+        width: 375px;        
     }
     #pagina_inicial {
         max-width: 335px;   
@@ -247,7 +246,8 @@ footer div {
     }
 
     section{
-        width: 400px;
+        width: 375px;
+        border: 2px solid red;
     }
     h2, h3,h4, p,footer{
         font-size:20px;
@@ -309,7 +309,7 @@ footer div {
 }
 
 
-@media (max-width: 425px)  and (max-width:529px){
+@media (min-width: 425px)  and (max-width:529px){
     header {
         font-size: 40px;
         padding: 10px;
