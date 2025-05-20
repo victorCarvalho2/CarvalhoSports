@@ -108,7 +108,7 @@
     <!-- Carrinho -->
   <div class="carrinho">
     <h3>Carrinho de Compras</h3>
-    <p id="itensCarrinho" style="font-size:15px;"></p >
+    <p id="itensCarrinho"></p >
     <p class="total">Total: R$ 0,00</p>
     <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
     <div id="qrcode" style="margin-top: 20px;"></div>
@@ -119,7 +119,7 @@
 
     function atualizarCarrinho() {
       const carrinhoUl = document.getElementById("itensCarrinho");
-      const total = document.querySelector("total");
+      const total = document.querySelector(".total");
       carrinhoUl.innerHTML = '';
       let totalCarrinho = 0;
 

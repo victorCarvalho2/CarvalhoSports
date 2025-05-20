@@ -354,7 +354,8 @@ button{
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        max-width: 320px;
+        max-width: 420px;
+        
         justify-content: center;
         
     }
@@ -652,12 +653,11 @@ button{
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        max-width: 413px;
+        max-width: 425px;
         justify-content: center;
         
     }
-    #pagina_inicial {
-       
+    #pagina_inicial {   
         border-radius: 15px;
         padding: 15px;
         font-size: 20px;
@@ -665,7 +665,7 @@ button{
     }  
 
     section{
-        width: 415px;
+        width: 425px;
     }
     h2, h3{
         font-size:15px;
@@ -732,7 +732,7 @@ button{
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        width: 415px;
+        width: 425px;
     }
     
     #lista-carrinho {

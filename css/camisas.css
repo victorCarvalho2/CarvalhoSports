@@ -265,7 +265,6 @@ button {
     background-color: #435376;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
-    border: 2px solid red;
     
 }
 
@@ -340,8 +339,8 @@ button {
 }
 
 #itensCarrinho {
-    color: #444;
-    background-color: #0c2865;
+    color: #1e3a75;
+    background-color: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 25px;
     padding: 2px;
@@ -361,9 +360,6 @@ button {
 }
 
 
-
-/* RESPONSIVIDADE */
-
 /* Responsividade */
 @media (min-width: 320px) and (max-width: 529px) { 
     header {
@@ -371,7 +367,7 @@ button {
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        width: 330px;
+        width: 320px;
     }
 
 
@@ -464,7 +460,7 @@ button {
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        width: 340px;
+        width: 320px;
     }
     
     #lista-carrinho {

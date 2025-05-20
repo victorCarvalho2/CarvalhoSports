@@ -250,9 +250,10 @@ footer div {
         width: 400px;
     }
     h2, h3,h4, p,footer{
-        font-size:15px;
+        font-size:20px;
         margin: 4px;
         padding: 2px;
+        
     }
 
     /*img aparecera  */
@@ -314,8 +315,7 @@ footer div {
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        width: 410px;
-        
+        width: 425px;       
     }
     #pagina_inicial {
         max-width: 335px;   
@@ -329,7 +329,7 @@ footer div {
     }
 
     section{
-        width: 410px;
+        width: 425px;
     }
     h2, h3,h4, p{
         font-size:15px;

@@ -382,7 +382,7 @@ button {
     }  
 
     section{
-        width: 310px;
+        width: 320px;
     }
     h2, h3{
         font-size:15px;
@@ -488,7 +488,6 @@ button {
         border: 2px solid #e0e0e0;
         transition: 0.3s;
         margin-left: auto;
-        
     }
 
      #comprarMobile{
@@ -508,7 +507,7 @@ button {
          text-decoration: none;
          font-weight: bold;
          padding: 0px;
-         border-radius: 15px;
+         border-radius: 1px;
          font-size: 5px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
@@ -684,7 +683,7 @@ button {
         padding: 10px;
         margin-top: 10px;
         display: auto;
-        width:415px;
+        width:425px;
         justify-content: center;
     }
 
@@ -696,7 +695,7 @@ button {
     }  
 
     section{
-        width: 415px;
+        width: 425px;
 
     }
     h2, h3{
@@ -772,7 +771,7 @@ button {
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        max-width: 415px;
+        max-width: 425px;
     }
     
     #lista-carrinho {
