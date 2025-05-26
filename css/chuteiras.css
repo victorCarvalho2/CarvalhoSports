@@ -348,182 +348,29 @@ button{
 
 
 /* Responsividade */
-@media (min-width: 320px) and (max-width:529px){
-    header {
+@media (min-width: 320px) and (max-width:768px){
+    header{
         font-size: 40px;
+        margin-top: 2px;
         padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        max-width: 420px;
-        
-        justify-content: center;
-        
+        display: block;
     }
+
+    
     #pagina_inicial {
-        max-width: 335px;   
+        max-width: 300px;   
         border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
-    }  
-
-    section{
-        width: 320px;
-    }
-    h2, h3{
-        font-size:15px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-    #nike_azul{
-        max-width: 150px;
-    }
-    #nike_preta{
-        max-width: 150px;
-    }
-    #nike_rosa{
-        max-width: 150px;
-    }
-    #nike_verde{
-        max-width: 150px;
-    }
-
-    .nike_azul{
-        display: none;
-    }
-    .nike_preta{
-        display: none;
-    }
-    .nike_rosa{
-        display: none;
-    }
-    .nike_verde{
-        display: none;
-    }
-
-
-    /* botao camisa */
-    .camisas{
-        display: none;
-    }
-    /* botao chuteiras */
-    .chuteiras{
-        display: none;
-    }
-    /* batao materiais */
-    .material{
-        display: none;
-    }
-    /* botao tenis */
-    .tenis{
-        display: none;
-    }
-    /* botao_sair */
-    .sair{
-        display: none;
-    }
-
-
-    .carrinho  {
-        width: 100%;
-        margin: 5px auto;
-        /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
-        /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-        width: 320px;
-    }
-    
-    #lista-carrinho {
-        list-style: none;
-        width: 20px;
-        padding: 0;
-    }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        font-size: 1px;
-    }   
-
-
-    /* BOTAO REMOVER */
-    button  {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 1px 5px;
-        border-radius: 5px;
-        font-size: 20px;
-        background-color: #435376;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        margin-left: auto;
-        
-    }
-
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
-
-}
-
-
-
-@media (min-width: 375px) and (max-width:529px){
-    header {
-        font-size: 45px;
         padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        max-width: 365px;
-        justify-content: center;
-        
-    }
-    #pagina_inicial {
-        max-width: 335px;   
-        border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
+        font-size: 25px;
     }  
 
-    section{
-        width: 375px;
-    }
-    h2, h3{
+    h2,h3{
+      
         font-size:15px;
         margin: 4px;
         padding: 2px;
     }
+
 
     #nike_azul{
         max-width: 150px;
@@ -579,17 +426,15 @@ button{
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px;
+        padding: 5px; */
         /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        width: 375px;
-    }
+    } 
     
     #lista-carrinho {
         list-style: none;
-        width: 20px;
         padding: 0;
     }
     
@@ -611,19 +456,18 @@ button{
         font-weight: bold;
         padding: 1px 5px;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 0.5em;
         background-color: #435376;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
-        margin-left: auto;
-        
+        margin-left: auto; 
     }
 
      #comprarMobile{
          color: #FFF;
          text-decoration: none;
          font-weight: bold;
-         padding: 15px;
+         padding: 10px;
          border-radius: 15px;
          font-size: 15px;
          background-color: #0c2865;
@@ -637,7 +481,7 @@ button{
          font-weight: bold;
          padding: 15px;
          border-radius: 15px;
-         font-size: 15px;
+         font-size: 20px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
          transition: 0.3s;         
@@ -645,150 +489,3 @@ button{
 
 }
 
-
-
-@media (min-width: 425px) and (max-width:529px) {
-    header {
-        font-size: 35px;
-        padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        max-width: 425px;
-        justify-content: center;
-        
-    }
-    #pagina_inicial {   
-        border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
-    }  
-
-    section{
-        width: 425px;
-    }
-    h2, h3{
-        font-size:15px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-    #nike_azul{
-        max-width: 150px;
-    }
-    #nike_preta{
-        max-width: 150px;
-    }
-    #nike_rosa{
-        max-width: 150px;
-    }
-    #nike_verde{
-        max-width: 150px;
-    }
-
-    .nike_azul{
-        display: none;
-    }
-    .nike_preta{
-        display: none;
-    }
-    .nike_rosa{
-        display: none;
-    }
-    .nike_verde{
-        display: none;
-    }
-
-
-    /* botao camisa */
-    .camisas{
-        display: none;
-    }
-    /* botao chuteiras */
-    .chuteiras{
-        display: none;
-    }
-    /* batao materiais */
-    .material{
-        display: none;
-    }
-    /* botao tenis */
-    .tenis{
-        display: none;
-    }
-    /* botao_sair */
-    .sair{
-        display: none;
-    }
-
-
-    .carrinho  {
-        width: 100%;
-        margin: 5px auto;
-        /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
-        /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-        width: 425px;
-    }
-    
-    #lista-carrinho {
-        list-style: none;
-        width: 20px;
-        padding: 0;
-    }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        font-size: 1px;
-    }   
-
-
-    /* BOTAO REMOVER */
-    button  {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 1px 5px;
-        border-radius: 5px;
-        font-size: 20px;
-        background-color: #435376;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        margin-left: auto;
-        
-    }
-
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
-
-}

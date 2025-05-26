@@ -361,31 +361,30 @@ button {
 
 
 /* Responsividade */
-@media (min-width: 320px) and (max-width: 529px) { 
-    header {
+@media (min-width: 320px) and (max-width: 768px) { 
+ 
+    header{
         font-size: 40px;
+        margin-top: 2px;
         padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        width: 320px;
+        display: block;
     }
 
-
+    
     #pagina_inicial {
-        max-width: 345px;   
+        max-width: 300px;   
         border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
+        padding: 10px;
+        font-size: 25px;
     }  
 
-    section{
-        width: 320px;
-    }
-    h2, h3{
+    h2,h3{
+      
         font-size:15px;
         margin: 4px;
         padding: 2px;
     }
+
 
 
     #camisa_botafogo {
@@ -450,22 +449,21 @@ button {
         display: none;
     }
 
+    
     .carrinho  {
         width: 100%;
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px;
+        padding: 5px; */
         /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-        width: 320px;
-    }
+    } 
     
     #lista-carrinho {
         list-style: none;
-        width: 20px;
         padding: 0;
     }
     
@@ -477,7 +475,8 @@ button {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         align-items: center;
         font-size: 1px;
-    }  
+    }   
+
 
     /* BOTAO REMOVER */
     button  {
@@ -486,170 +485,11 @@ button {
         font-weight: bold;
         padding: 1px 5px;
         border-radius: 5px;
-        font-size: 20px;
-        background-color: #435376;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        margin-left: auto;
-        
-    }
-
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 20px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
-}
-
-/* Responsividade */
-@media (min-width:375px) and (max-width: 529px){
-    header {
-        font-size: 45px;
-        padding: 15px;
-        margin-top: 10px;
-        display: block;
-        width: 375px;
-    }
-    section{
-        width: 375px;
-    }
-
-    #pagina_inicial {
-        max-width: 300px;   
-        border-radius: 15px;
-        padding: 10px;
-        font-size: 30px;
-    }  
-
-    h2,h3{
-        font-size:18px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-
-    #camisa_botafogo {
-        max-width: 150px;
-    }
-
-    #camisa_inter {
-        max-width: 20   0px;
-    }
-
-    #camisa_palmeiras {
-        max-width: 200px;
-    }
-
-    #camisa_vasco {
-        max-width: 200px;
-    }
-
-    #camisa_sao_paulo {
-        max-width: 200px;
-    }
-
-    /* OCULTOS */
-    .camisa_botafogo {
-        display: none;
-    }
-
-    .camisa_inter {
-        display: none;
-    }
-
-    .camisa_palmeiras {
-        display: none;
-    }
-
-    .camisa_vasco {
-        display: none;
-    }
-
-    .camisa_sao_paulo {
-        display: none;
-    }
-
-
-    .chuteiras {
-        display: none;
-    }
-
-    .camisas {
-        display: none;
-    }
-
-    .material {
-        display: none;
-    }
-
-    .tenis {
-        display: none;
-    }
-
-    .sair {
-        display: none;
-    }
-
-    .carrinho  {
-        width: 100%;
-        margin: 5px auto;
-        /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
-        /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-    }
-    
-  
-    #lista-carrinho {
-        list-style: none;
-        padding: 0;
-    }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        font-size: 100px;
-        width: 350px;
-    }   
-
-
-    /* BOTAO REMOVER */
-    button  {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 8px;
-        border-radius: 5px;
         font-size: 0.5em;
         background-color: #435376;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
-        margin-left: auto;
-        
+        margin-left: auto; 
     }
 
      #comprarMobile{
@@ -658,165 +498,7 @@ button {
          font-weight: bold;
          padding: 10px;
          border-radius: 15px;
-         font-size:15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 10px;
-         border-radius: 15px;
-         font-size: 20px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
-}
-
-
-
-
-@media (min-width: 425px) and (max-width:529px){
-    header {
-        font-size: 50px;
-        padding: 15px;
-        margin-top: 10px;
-        width: 425px;
-        display: block;
-    }
-
-    section{
-       width: 425px;
-    }
-
-    #pagina_inicial {
-        max-width: 300px;   
-        border-radius: 15px;
-        padding: 10px;
-        font-size: 30px;
-    }  
-
-    h2,h3{
-        font-size:20px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-    #camisa_botafogo {
-        max-width: 150px;
-    }
-
-    #camisa_inter {
-        max-width: 150px;
-    }
-
-    #camisa_palmeiras {
-        max-width: 150px;
-    }
-
-    #camisa_vasco {
-        max-width: 150px;
-    }
-
-    #camisa_sao_paulo {
-        max-width: 150px;
-    }
-
-    /* OCULTOS */
-    .camisa_botafogo {
-        display: none;
-    }
-
-    .camisa_inter {
-        display: none;
-    }
-
-    .camisa_palmeiras {
-        display: none;
-    }
-
-    .camisa_vasco {
-        display: none;
-    }
-
-    .camisa_sao_paulo {
-        display: none;
-    }
-
-
-    .chuteiras {
-        display: none;
-    }
-
-    .camisas {
-        display: none;
-    }
-
-    .material {
-        display: none;
-    }
-
-    .tenis {
-        display: none;
-    }
-
-    .sair {
-        display: none;
-    }
-
-    .carrinho  {
-        width: 100%;
-        margin: 5px auto;
-        /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
-        /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-    }
-    
-    #lista-carrinho {
-        list-style: none;
-        padding: 0;
-    }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        font-size: 1px;
-    }   
-
-
-    /* BOTAO REMOVER */
-    button {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 10px;
-        background-color: #435376;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        margin-left: auto;
-    }   
-
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 20px;
+         font-size: 15px;
          background-color: #0c2865;
          border: 2px solid #e0e0e0;
          transition: 0.3s;

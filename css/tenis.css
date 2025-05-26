@@ -363,7 +363,7 @@ button {
 }
 
 /* Responsividade */
-@media (min-width: 320px) and (max-width:529px) {
+ @media (min-width: 320px) and (max-width:768px) {
 
     header{
         font-size: 40px;
@@ -398,12 +398,12 @@ button {
     }
     #tenis_quatro{
         max-width: 150px;
-    }
+    } 
 
 
     
        /* imagens ocultas  */
-       .tenis_um{
+    .tenis_um{
         display: none;
     }
     .tenis_dois{
@@ -414,13 +414,13 @@ button {
     }
     .tenis_quatro{
         display: none;
-    }
+    } 
     /* fim das imagens ocultas */
     
 
 
     /* botoes */
-    .camisas{
+     .camisas{
         display: none;
     }
     .chuteiras{
@@ -434,7 +434,7 @@ button {
     }
     .sair{
         display: none;
-    }
+    } 
     /* fim dos botoes */
 
 
@@ -443,12 +443,12 @@ button {
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px;
+        padding: 5px; */
         /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-    }
+    } 
     
     #lista-carrinho {
         list-style: none;
@@ -503,11 +503,9 @@ button {
          border: 2px solid #e0e0e0;
          transition: 0.3s;         
      }
- 
-
 }
 
-@media (min-width: 425px) and (max-width:529px){
+/* @media (min-width: 320px) and (max-width:768px){
 
     header{
         font-size: 50px;
@@ -542,12 +540,12 @@ button {
     }
     #tenis_quatro{
         max-width: 150px;
-    }
+    } */
 
 
     
        /* imagens ocultas  */
-       .tenis_um{
+       /* .tenis_um{
         display: none;
     }
     .tenis_dois{
@@ -558,13 +556,13 @@ button {
     }
     .tenis_quatro{
         display: none;
-    }
+    } */
     /* fim das imagens ocultas */
     
 
 
     /* botoes */
-    .camisas{
+    /* .camisas{
         display: none;
     }
     .chuteiras{
@@ -578,18 +576,18 @@ button {
     }
     .sair{
         display: none;
-    }
+    } */
     /* fim dos botoes */
 
 
-    .carrinho  {
+    /* .carrinho  {
         width: 100%;
-        margin: 5px auto;
+        margin: 5px auto; */
         /* Centraliza no meio da página com espaço acima */
-        background-color: #fff;
-        padding: 5px;
+        /* background-color: #fff;
+        padding: 5px; */
         /* border-radius: 15px; */
-        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
     }
@@ -608,10 +606,10 @@ button {
         align-items: center;
         font-size: 1px;
     }   
-
+ */
 
     /* BOTAO REMOVER */
-    button  {
+    /* button  {
         color: #e0e0e0;
         text-decoration: none;
         font-weight: bold;
@@ -649,4 +647,4 @@ button {
      }
  
 
-}
+} */

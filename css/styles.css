@@ -145,33 +145,29 @@ footer div {
 
 
 /* Responsividade*/
-@media (min-width: 320px)  and (max-width:529px){
-    header {
+ @media (min-width: 320px)  and (max-width:768px){
+    
+    header{
         font-size: 40px;
+        margin-top: 2px;
         padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        width: 320px;       
-    }
-    #pagina_inicial {
-        max-width: 335px;   
-        border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
-    }  
-    nav{
-        display: none;
+        display: block;
     }
 
-    section{
-        width: 320px;
-    }
-    h2, h3,h4, p,footer{
+    
+    #pagina_inicial {
+        max-width: 300px;   
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 25px;
+    }  
+
+    h2,h3{
+      
         font-size:15px;
         margin: 4px;
         padding: 2px;
-    }
+    } 
 
     /*img aparecera  */
     
@@ -187,11 +183,11 @@ footer div {
         }
         #tenis_nike{
             max-width: 150px;
-        }
+        } 
 
     /* img ocultas  */
 
-        .chuteira-img{
+         .chuteira-img{
             display: none;
         }
         .camisas-img{
@@ -204,186 +200,32 @@ footer div {
             display: none;
         }
 
-        .chuteiras{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .camisas{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .material{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .tenis_nike{
-            padding: 20px;
-            font-size: 20px;
-        }
-}
-
-
-@media (min-width: 375px)  and (max-width:529px){
-    header {
-        font-size: 40px;
-        padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        width: 375px;        
-    }
-    #pagina_inicial {
-        max-width: 335px;   
-        border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
-    }  
-    nav{
-        display: none;
-    }
-
-    section{
-        width: 375px;
-    }
-    h2, h3,h4, p,footer{
-        font-size:20px;
-        margin: 4px;
-        padding: 2px;
-        
-    }
-
-    /*img aparecera  */
-    
-        #azul{
-            max-width: 170px;           
-        }
-
-        #camisa-botafogo{
-            max-width: 170px;            
-        }
-        #garrafa_corinthians{
-            max-width: 170px;
-        }
-        #tenis_nike{
-            max-width: 170px;
-        }
-
-    /* img ocultas  */
-
-        .chuteira-img{
-            display: none;
-        }
-        .camisas-img{
-            display: none;
-        }
-        .acessorios{
-            display: none;
-        }
-        .tenis{
+        /* BOTOES OCULTOS */
+        .camisas, .chuteiras, 
+        .tenis,.acessorios, 
+        .sair{
             display: none;
         }
 
-        .chuteiras{
+        /* BOTOES DE ACESSO  */
+        .botao-chuteiras{
+            padding: 20px;
+            font-size: 20px;
+            
+        }
+        
+        .botao-camisas{
             padding: 20px;
             font-size: 20px;
         }
         
-        .camisas{
+        .botao-material{
             padding: 20px;
             font-size: 20px;
         }
         
-        .material{
+        .botao-tenis{
             padding: 20px;
             font-size: 20px;
         }
-        
-        .tenis_nike{
-            padding: 20px;
-            font-size: 20px;
-        }
-}
-
-
-@media (min-width: 425px)  and (max-width:529px){
-    header {
-        font-size: 40px;
-        padding: 10px;
-        margin-top: 10px;
-        display: auto;
-        width: 425px;       
-    }
-    #pagina_inicial {
-        max-width: 335px;   
-        border-radius: 15px;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
-    }  
-    nav{
-        display: none;
-    }
-
-    section{
-        width: 425px;
-    }
-    h2, h3,h4, p{
-        font-size:15px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-    /*img aparecera  */
-    
-        #azul{
-            max-width: 200px;           
-        }
-
-        #camisa-botafogo{
-            max-width: 200px;            
-        }
-        #garrafa_corinthians{
-            max-width: 200px;
-        }
-        #tenis_nike{
-            max-width: 200px;
-        }
-
-    /* img ocultas  */
-
-        .chuteira-img{
-            display: none;
-        }
-        .camisas-img{
-            display: none;
-        }
-        .acessorios{
-            display: none;
-        }
-        .tenis{
-            display: none;
-        }
-
-        .chuteiras{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .camisas{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .material{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .tenis_nike{
-            padding: 20px;
-            font-size: 20px;
-        }
-}
+} 
