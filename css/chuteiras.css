@@ -2,23 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif; /* Alterado para 'Roboto' */
+    font-family: 'Times New Roman', Times, serif;
+    /* Alterado para 'Roboto' */
     font-size: xx-large;
 }
 
 body {
-    background-color: #1e3a75; /* Cor de fundo do corpo */
-    color: #333; /* Texto escuro para maior legibilidade */
+    background-color: #1e3a75;
+    /* Cor de fundo do corpo */
+    color: #333;
+    /* Texto escuro para maior legibilidade */
 }
 
 
 /* Cabeçalho */
 header {
     background-color: #1e3a75;
-    color: #ffff; /* Alterado para texto mais escuro */
+    color: #ffff;
+    /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
-    font-size: 100px;
+    font-size: 150px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -117,7 +121,9 @@ section img:hover {
 }
 
 /* Títulos */
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     color: #333;
     font-size: 1em;
     margin-bottom: 15px;
@@ -126,7 +132,8 @@ h2, h3, h4 {
 /* Rodapé */
 footer {
     background-color: #0c2865;
-    color: #333; /* Texto mais claro no rodapé */
+    color: #333;
+    /* Texto mais claro no rodapé */
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -141,20 +148,21 @@ footer div {
 .carrinho {
     width: 100%;
     max-width: 10000px;
-    margin: 25px auto; /* Centraliza no meio da página com espaço acima */
+    margin: 25px auto;
+    /* Centraliza no meio da página com espaço acima */
     background-color: #fff;
     padding: 25px;
     /* border-radius: 15px; */
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: block;
-    
+
 }
 
-.carrinho h2, 
+.carrinho h2,
 .carrinho h3 {
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .lista-carrinho {
@@ -198,6 +206,7 @@ footer div {
     background-color: #e0e0e0;
     color: #333;
 }
+
 #mensagem-carrinho {
     position: fixed;
     top: 20px;
@@ -213,7 +222,8 @@ footer div {
     display: none;
     transition: opacity 0.5s ease;
 }
-.comprar{
+
+.comprar {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
@@ -225,7 +235,7 @@ footer div {
     transition: 0.3s;
 }
 
-#finalizarCompra{
+#finalizarCompra {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -235,9 +245,9 @@ footer div {
     background-color: #1e3a75;
     border: 2px solid #e0e0e0;
     transition: 0.3s;
-}   
+}
 
-button{
+button {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
@@ -248,11 +258,6 @@ button{
     border: 2px solid #e0e0e0;
     transition: 0.3s;
 }
-
-
-
-
-
 
 /* Área do PIX */
 #areaPix {
@@ -331,12 +336,13 @@ button{
     border: 2px solid #e0e0e0;
     border-radius: 25px;
     padding: 12px 25px;
-    font-size: 1.2em;
+    font-size: 0.5em;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
     margin-top: 20px;
+
 }
 
 #itensCarrinho:hover {
@@ -348,109 +354,126 @@ button{
 
 
 /* Responsividade */
-@media (min-width: 320px) and (max-width:768px){
-    header{
-        font-size: 40px;
+@media (min-width: 320px) and (max-width:768px) {
+    header {
+        font-size: 50px;
         margin-top: 2px;
         padding: 10px;
         display: block;
     }
 
-    
+
     #pagina_inicial {
-        max-width: 300px;   
+        max-width: 300px;
         border-radius: 15px;
         padding: 10px;
         font-size: 25px;
-    }  
+    }
 
-    h2,h3{
-      
-        font-size:15px;
+    h2,
+    h3 {
+
+        font-size: 22px;
         margin: 4px;
         padding: 2px;
     }
 
 
-    #nike_azul{
-        max-width: 150px;
-    }
-    #nike_preta{
-        max-width: 150px;
-    }
-    #nike_rosa{
-        max-width: 150px;
-    }
-    #nike_verde{
-        max-width: 150px;
+    #nike_azul {
+        max-width: 175px;
     }
 
-    .nike_azul{
+    #nike_preta {
+        max-width: 175px;
+    }
+
+    #nike_rosa {
+        max-width: 175px;
+    }
+
+    #nike_verde {
+        max-width: 175px;
+    }
+
+    #adidas_verde {
+        max-width: 175px;
+    }
+
+    #nike_prata {
+        max-width: 175px;
+    }
+
+    .nike_azul {
         display: none;
     }
-    .nike_preta{
+
+    .nike_preta {
         display: none;
     }
-    .nike_rosa{
+
+    .nike_rosa {
         display: none;
     }
-    .nike_verde{
+
+    .nike_verde {
+        display: none;
+    }
+
+    .adidas_verde {
+        display: none;
+    }
+
+    .nike_prata {
         display: none;
     }
 
 
     /* botao camisa */
-    .camisas{
+    .camisas {
         display: none;
     }
+
     /* botao chuteiras */
-    .chuteiras{
+    .chuteiras {
         display: none;
     }
+
     /* batao materiais */
-    .material{
+    .material {
         display: none;
     }
+
     /* botao tenis */
-    .tenis{
+    .tenis {
         display: none;
     }
+
     /* botao_sair */
-    .sair{
+    .sair {
         display: none;
     }
 
 
-    .carrinho  {
+    .carrinho {
         width: 100%;
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px; */
+        padding: 5px;
+        
         /* border-radius: 15px; */
-         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
-    } 
-    
+    }
+
     #lista-carrinho {
         list-style: none;
         padding: 0;
     }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        font-size: 1px;
-    }   
-
 
     /* BOTAO REMOVER */
-    button  {
+    button {
         color: #e0e0e0;
         text-decoration: none;
         font-weight: bold;
@@ -460,32 +483,45 @@ button{
         background-color: #435376;
         border: 2px solid #e0e0e0;
         transition: 0.3s;
-        margin-left: auto; 
+        margin-left: auto;
     }
 
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 10px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 20px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
+
+       ul #itensCarrinho {
+        color: #1e3a75;
+        background-color: #ffffff;
+        border: 2px solid #e0e0e0;
+        padding: 10px;
+        font-size: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-block;
+
+        }
+
+    #comprarMobile {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: #0c2865;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+    }
+
+    #finalizarCompra {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        background-color: #0c2865;
+        border: 2px solid #e0e0e0;
+        transition: 0.3s;
+    }
 
 }
-

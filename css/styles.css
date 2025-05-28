@@ -22,7 +22,7 @@ header {
     /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
-    font-size: 100px;
+    font-size: 150px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -148,7 +148,7 @@ footer div {
  @media (min-width: 320px)  and (max-width:768px){
     
     header{
-        font-size: 40px;
+        font-size: 50px;
         margin-top: 2px;
         padding: 10px;
         display: block;
@@ -159,12 +159,12 @@ footer div {
         max-width: 300px;   
         border-radius: 15px;
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }  
 
     h2,h3{
-      
-        font-size:15px;
+
+        font-size:22px;
         margin: 4px;
         padding: 2px;
     } 
@@ -172,17 +172,17 @@ footer div {
     /*img aparecera  */
     
         #azul{
-            max-width: 150px;           
+            max-width: 175px;           
         }
 
         #camisa-botafogo{
-            max-width: 150px;            
+            max-width: 175px;            
         }
         #garrafa_corinthians{
-            max-width: 150px;
+            max-width: 175px;
         }
         #tenis_nike{
-            max-width: 150px;
+            max-width: 175px;
         } 
 
     /* img ocultas  */

@@ -22,7 +22,7 @@ header {
     /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
-    font-size: 100px;
+    font-size: 150px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -366,7 +366,7 @@ button {
  @media (min-width: 320px) and (max-width:768px) {
 
     header{
-        font-size: 40px;
+        font-size: 50px;
         margin-top: 2px;
         padding: 10px;
         display: block;
@@ -382,22 +382,22 @@ button {
 
     h2,h3{
       
-        font-size:15px;
+        font-size:22px;
         margin: 4px;
         padding: 2px;
     }
 
     #tenis_um{
-        max-width: 150px;
+        max-width: 175px;
     }
     #tenis_dois{
-        max-width: 150px;
+        max-width: 175px;
     }
     #tenis_tres{
-        max-width: 150px;
+        max-width: 175px;
     }
     #tenis_quatro{
-        max-width: 150px;
+        max-width: 175px;
     } 
 
 
@@ -443,9 +443,9 @@ button {
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px; */
+        padding: 5px; 
         /* border-radius: 15px; */
-         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;
     } 
@@ -504,147 +504,3 @@ button {
          transition: 0.3s;         
      }
 }
-
-/* @media (min-width: 320px) and (max-width:768px){
-
-    header{
-        font-size: 50px;
-        margin-top: 2px;
-        padding: 10px;
-        display: block;
-    }
-
-    
-    #pagina_inicial {
-        max-width: 300px;   
-        border-radius: 15px;
-        padding: 10px;
-        font-size: 25px;
-    }  
-
-    h2,h3{
-      
-        font-size:15px;
-        margin: 4px;
-        padding: 2px;
-    }
-
-    #tenis_um{
-        max-width: 150px;
-    }
-    #tenis_dois{
-        max-width: 150px;
-    }
-    #tenis_tres{
-        max-width: 150px;
-    }
-    #tenis_quatro{
-        max-width: 150px;
-    } */
-
-
-    
-       /* imagens ocultas  */
-       /* .tenis_um{
-        display: none;
-    }
-    .tenis_dois{
-        display: none;
-    }
-    .tenis_tres{
-        display: none;
-    }
-    .tenis_quatro{
-        display: none;
-    } */
-    /* fim das imagens ocultas */
-    
-
-
-    /* botoes */
-    /* .camisas{
-        display: none;
-    }
-    .chuteiras{
-        display: none;
-    }
-    .material{
-        display: none;
-    }
-    .tenis{
-        display: none;
-    }
-    .sair{
-        display: none;
-    } */
-    /* fim dos botoes */
-
-
-    /* .carrinho  {
-        width: 100%;
-        margin: 5px auto; */
-        /* Centraliza no meio da página com espaço acima */
-        /* background-color: #fff;
-        padding: 5px; */
-        /* border-radius: 15px; */
-        /* box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        display: block;
-    }
-    
-    #lista-carrinho {
-        list-style: none;
-        padding: 0;
-    }
-    
-    #itensCarrinho {
-        background-color: #fff;
-        border-radius: 0px;
-        padding: 0px;
-        margin-bottom: 1px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        font-size: 1px;
-    }   
- */
-
-    /* BOTAO REMOVER */
-    /* button  {
-        color: #e0e0e0;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 1px 5px;
-        border-radius: 5px;
-        font-size: 0.5em;
-        background-color: #435376;
-        border: 2px solid #e0e0e0;
-        transition: 0.3s;
-        margin-left: auto; 
-    }
-
-     #comprarMobile{
-         color: #FFF;
-         text-decoration: none;
-         font-weight: bold;
-         padding: 10px;
-         border-radius: 15px;
-         font-size: 15px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;
-     } 
-     
-    #finalizarCompra{
-        color: #FFF; 
-         text-decoration: none;
-         font-weight: bold;
-         padding: 15px;
-         border-radius: 15px;
-         font-size: 20px;
-         background-color: #0c2865;
-         border: 2px solid #e0e0e0;
-         transition: 0.3s;         
-     }
- 
-
-} */
