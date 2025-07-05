@@ -16,16 +16,31 @@ body {
 
 
 /* Cabeçalho */
-header {
+/* header {
     background-color: #1e3a75;
     color: #ffff;
-    /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
     font-size: 150px;
     font-weight: bold;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e3a75;
+    color: #ffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 60px;  /* ajustado */
+    font-weight: bold;
+    box-shadow: none; /* sem sombra */
+    z-index: 1000;
 }
+
 
 /* Navegação */
 nav {
@@ -35,9 +50,9 @@ nav {
     display: flex;
     justify-content: center;
     gap: 35px;
-    /* margin: 25px; */
+    margin-top: 80px; 
     flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 nav a {
@@ -107,7 +122,7 @@ section button:hover {
 }
 
 section img {
-    width: 350px;
+    width: 250px;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -466,8 +481,8 @@ button {
         margin: 5px auto;
         /* Centraliza no meio da página com espaço acima */
         background-color: #fff;
-        padding: 5px; */
-        /* border-radius: 15px; */
+        padding: 5px; 
+        
          box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: block;

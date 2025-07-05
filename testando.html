@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrossel Individual</title>
+  <style>
+    .slider {
+        margin-top: 150px;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 30px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .arrow-left {
+      left: 10px;
+    }
+
+    .arrow-right {
+      right: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+  </header>
+
+  <div class="slider" id="slider">
+    <h1>TESTANDO</h1>
+
+    <!-- Botões -->
+    <button class="arrow arrow-left" onclick="voltarSlide()">&#10094;</button>
+    <button class="arrow arrow-right" onclick="avancarSlide()">&#10095;</button>
+
+    <!-- Slides individuais -->
+    <div class="slide active">
+      <img src="img/Camisas/botafogo2/botafogo2.jpg" alt="Imagem 1">
+    </div>
+    <div class="slide">
+      <img src="img/Camisas/botafogo3/botafogo2.jpg" alt="Imagem 2">
+    </div>
+    <div class="slide">
+      <img src="img/Camisas/palmeiras/palmeiras.jpg" alt="Imagem 3">
+    </div>
+    <div class="slide">
+      <img src="img/Camisas/gremio/gremio.jpg" alt="Imagem 4">
+    </div>
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    let intervalo;
+
+    function mostrarSlide(i) {
+      slides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === i);
+      });
+    }
+
+    function avancarSlide() {
+      index = (index + 1) % slides.length;
+      mostrarSlide(index);
+      reiniciarAuto();
+    }
+
+    function voltarSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      mostrarSlide(index);
+      reiniciarAuto();
+    }
+
+    function iniciarAuto() {
+      intervalo = setInterval(() => {
+        avancarSlide();
+      }, 6000); // muda a cada 6 segundos
+    }
+
+    function reiniciarAuto() {
+      clearInterval(intervalo);
+      iniciarAuto();
+    }
+
+    window.onload = () => {
+      mostrarSlide(index);
+      iniciarAuto();
+    };
+  </script>
+</body>
+</html>
