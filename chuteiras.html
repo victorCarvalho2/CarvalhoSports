@@ -8,6 +8,86 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Carvalho Sport's - Chuteiras</title>
   <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+   
+   <style>
+  .carrinho {
+    position: fixed;
+    top: 109px;
+    right: 20px;
+    width: 500px; /* AUMENTADO */
+    max-height: 100vh;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px; /* AUMENTADO */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .carrinho ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px; /* AUMENTADO */
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+
+  .carrinho li {
+    font-size: 30px; /* AUMENTADO */
+    margin-bottom: 12px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carrinho li button {
+    margin-left: 10px;
+    background-color: #0c2865;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .carrinho li button:hover {
+    background-color: #1e3a75;
+  }
+
+  .carrinho .total {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px; /* AUMENTADO */
+    color: #0c2865;
+    text-align: right;
+  }
+
+  #finalizarCompra {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0c2865;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-size: 18px; /* AUMENTADO */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #finalizarCompra:hover {
+    background-color: #1e3a75;
+  }
+</style>
+
+
+
 </head>
 
 <body>
@@ -23,215 +103,216 @@
     <a class="sair" href="index.php">Sair</a>
   </nav>
 
-  <section class="texto">
+  <section class="titulo">
+  
     <h2>Na Carvalho Sport's, temos:</h2>
     <h3>Todos os tipos de chuteiras que você precisar.</h3>
+  
   </section>
 
   <!-- Produto 1 -->
-  <section>
-    <div>
-      <img id="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
+  <section class="destaque-produto">
+
+    <div class="conteudo-produto">
+
+      <!-- SLIDE DE IMAGENS -->
+      <div class="slider" data-group="nike-azul">
+        <div class="slide active"><img src="img/newChuteiras/chuteira azul/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira azul/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira azul/3.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira azul/4.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira azul/5.jpg" alt=""></div>
+      </div>
+
+      <!-- INFORMAÇÕES DO PRODUTO -->
+      <div class="info-produto">
+        <h2>Chuteira Nike Phantom GT2 Elite</h2>
+        <h3>Disponível por: R$ 997,49</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
+          Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Nike Phantom GT2 Elite</h2>
-    <h3>Disponivel por: R$ 997,49</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
-      Carrinho</button>
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
   </section>
 
-  <section>
-    <div>
-      <img id="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
+
+  <section class="destaque-produto">
+
+    <div class="conteudo-produto">
+
+      <!-- SLIDE DE IMAGENS -->
+      <div class="slider" data-group="nike-preta">
+        <div class="slide active"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira preta/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira preta/3.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira_preta/4.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira preta/5.jpg" alt=""></div>
+      </div>
+
+      <!-- INFORMAÇÕES DO PRODUTO -->
+      <div class="info-produto">
+        <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
+        <h3>Disponivel por apenas: <br> R$533,99</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
+          data-preco="1133.99">Adicionar ao Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Adidas X CrazyFast.1</h2>
-    <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-      Carrinho</button>
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
   </section>
 
-  <!-- Produto 2 -->
-  <section>
-    <div>
-      <img id="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
+  <section class="destaque-produto">
+    <div class="conteudo-produto">
+
+      <div class="slider" data-group="nike-rosa">
+        <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
+      </div>
+
+      <div class="info-produto">
+        <h2>Chuteira Nike Phantom GX Academy</h2>
+        <h3>Disponivel por apenas: <br>R$ 831,99</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar ao
+          Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
-    <h3>Disponivel por apenas: <br> R$533,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
-      data-preco="1133.99">Adicionar ao Carrinho</button>
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
   </section>
 
-  <!-- Produto 3 rosa-->
-  <section>
-    <div>
-      <img id="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
+  <section class="destaque-produto">
+    <div class="conteudo-produto">
+      <div class="slider" data-group="nike-verde">
+        <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
+      </div>
+
+      <div class="info-produto">
+        <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
+        <h3>Disponivel por apenas: <br>R$ 989,99</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite" data-preco="989.99">Adicionar
+          ao Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Nike Phantom GX Academy</h2>
-    <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar ao
-      Carrinho</button>
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
+
   </section>
 
-  <!-- Produto 4 verde -->
-  <section>
-    <div class="galeria">
-      <img id="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
+  <section class="destaque-produto">
+    <div class="conteudo-produto">
+      <div class="slider" data-group="adidas-verde">
+        <div class="slide active"><img src="img/newChuteiras/prata-verde/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/prata-verde/3.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/prata-verde/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/prata-verde/4.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/prata-verde/5.jpg" alt=""></div>
+      </div>
+
+      <div class="info-produto">
+        <h2>Chuteira Adidas X CrazyFast.1</h2>
+        <h3>Disponivel por apenas: <br>R$ 799,95</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
+          Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-    <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite" data-preco="989.99">Adicionar ao
-      Carrinho</button>
+
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
+
   </section>
 
-  <!-- chuteiras novas  -->
-  <section>
-    <div>
-      <img id="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
+  <section class="destaque-produto">
+    <div class="conteudo-produto">
+      <div class="slider" data-group="prata-laranja">
+        <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
+        <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
+      </div>
+
+      <div class="info-produto">
+        <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
+        <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
+        <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric"
+          data-preco="2184.99">Adicionar ao
+          Carrinho</button>
+      </div>
     </div>
-    <h2>Chuteira Adidas X CrazyFast.1</h2>
-    <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-      Carrinho</button>
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+          slides[index].classList.remove('active');
+          index = (index + 1) % slides.length;
+          slides[index].classList.add('active');
+        }, 4000); // Troca a cada 4 segundos
+      });
+    </script>
   </section>
 
-  <section>
-    <div>
-      <img id="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-    </div>
-    <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
-    <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric" data-preco="2184.99">Adicionar ao
-      Carrinho</button>
-  </section>
 
-  <section>
-    <div>
-      <img id="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-      <img class="nike_azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="" />
-    </div>
-    <h2>Chuteira Nike Phantom GT2 Elite</h2>
-    <h3>Disponivel por: R$ 997,49</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
-      Carrinho</button>
-  </section>
 
-  <section>
-    <div>
-      <img id="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-    </div>
-    <h2>Chuteira Adidas X CrazyFast.1</h2>
-    <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-      Carrinho</button>
-  </section>
-
-  <!-- Produto 2 -->
-  <section>
-    <div>
-      <img id="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-      <img class="nike_preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-    </div>
-    <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
-    <h3>Disponivel por apenas: <br> R$533,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
-      data-preco="1133.99">Adicionar ao Carrinho</button>
-  </section>
-
-  <!-- Produto 3 rosa-->
-  <section>
-    <div>
-      <img id="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-      <img class="nike_rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="Chuteira Nike Phantom GX Academy" />
-    </div>
-    <h2>Chuteira Nike Phantom GX Academy</h2>
-    <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar ao
-      Carrinho</button>
-  </section>
-
-  <!-- Produto 4 verde -->
-  <section>
-    <div class="galeria">
-      <img id="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-      <img class="nike_verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="Chuteira Nike Tiempo Legend" />
-    </div>
-    <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-    <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite" data-preco="989.99">Adicionar ao
-      Carrinho</button>
-  </section>
-
-  <!-- chuteiras novas  -->
-  <section>
-    <div>
-      <img id="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-      <img class="adidas_verde" src="img/newChuteiras/chuteira-prata-verde/chuteira-prata-verde3.jpg">
-    </div>
-    <h2>Chuteira Adidas X CrazyFast.1</h2>
-    <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-      Carrinho</button>
-  </section>
-
-  <section>
-    <div>
-      <img id="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-      <img class="nike_prata" src="img/newChuteiras/chuteira-prata/foto1.jpg">
-    </div>
-    <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
-    <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
-    <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric" data-preco="2184.99">Adicionar ao
-      Carrinho</button>
-  </section>
 
 
   <!-- Carrinho -->

@@ -14,17 +14,19 @@ body {
     /* Texto escuro para maior legibilidade */
 }
 
-
-/* Cabeçalho */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #1e3a75;
     color: #ffff;
-    /* Alterado para texto mais escuro */
     text-align: center;
     padding: 15px;
-    font-size: 150px;
+    font-size: 90px;  /* ajustado */
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: none; /* sem sombra */
+    z-index: 1000;
 }
 
 /* Navegação */
@@ -70,64 +72,129 @@ main {
 }
 
 /* Seções gerais */
-section {
-    background-color: #fff;
-    /* border-radius: 15px; */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 25px auto;
+.titulo{
+  background-color: #fff;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: none;
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+/* Seção principal destacada */
+.destaque-produto {
+  width: 100%; /* ⬅️ Faz a section ocupar 100% da largura da página */
+  max-width: none; /* ⬅️ Remove o limite anterior de largura */
+  margin: 40px auto;
+  padding: 30px; /* ⬅️ Aumenta o espaçamento interno */
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: left; /* ⬅️ Alinha o conteúdo à esquerda */
+  display: flex; /* ⬅️ Torna a section um flex container */
+  justify-content: center; /* ⬅️ Centraliza o conteúdo internamente */
 }
 
-section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+/* Container para imagem e informações lado a lado */
+.conteudo-produto {
+  display: flex;
+  flex-wrap: wrap; /* ⬅️ Responsivo: quebra em telas pequenas */
+  gap: 30px; /* ⬅️ Espaço entre imagem e info */
+  width: 100%;
+  max-width: 1200px; /* ⬅️ Limita largura do conteúdo */
 }
 
-/* Links e imagens dos produtos */
-section a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 10px;
-    transition: 0.3s;
-    background-color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: 2px solid #e0e0e0;
+/* Slider de imagem */
+.slider {
+
+  flex: 1 1 900px; /* ⬅️ Flexível, mínimo de 500px */
+  height: 1000px; /* ⬅️ Aumenta altura do carrossel */
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
 }
 
-section button:hover {
-    background-color: #e0e0e0;
-    color: #333;
+/* Slides */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-section img {
-    width: 350px;
-    height: auto;
-    border-radius: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+  
 }
 
-section img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+    
 }
 
-/* Títulos */
-h2,
-h3,
-h4 {
-    color: #333;
-    font-size: 1em;
-    margin-bottom: 15px;
+/* Informações ao lado da imagem */
+.info-produto {
+  flex: 1 1 600px; /* ⬅️ Flexível, mínimo de 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+
 }
+
+.info-produto h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.info-produto h3 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.info-produto button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #0c2865;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-produto button:hover {
+  background-color: #1e3a75;
+}
+
+
+button.comprar {
+  background-color: #0c2865;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.comprar:hover {
+  background-color: #e0e0e0;
+  color: #0c2865;
+}
+
 
 /* Rodapé */
 footer {
