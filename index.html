@@ -82,14 +82,28 @@
                     </div>
                 </div>
 
-                <!-- CHUTEIRA PRATA -->
+                <!-- CHUTEIRA PRETA -->
                 <div class="produto">
-                    <div class="slider" data-group="prata">
-                        <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-                        <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg"alt=""></div>
-                        <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg"alt=""></div>
+                    <div class="slider" data-group="preta">
+                        <div class="slide active"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira preta/2.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira preta/3.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira preta/4.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira preta/5.jpg" alt=""></div>
                     </div>
                 </div>
+
+                <!-- CHUTEIRA AZUL -->
+                <div class="produto">
+                    <div class="slider" data-group="azul">
+                        <div class="slide active"><img src="img/newChuteiras/chuteira azul/1.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira azul/2.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira azul/3.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira azul/4.jpg" alt=""></div>
+                        <div class="slide"><img src="img/newChuteiras/chuteira azul/5.jpg" alt=""></div>
+                    </div>
+                </div>
+
             </div>
             <h3 class="chuteira" id="text-chuteira">Para ver mais Chuteiras <br> clique e acesse:</h3>
             <a class="botao-chuteiras" href="chuteiras.html">Chuteiras</a>
@@ -97,7 +111,7 @@
 
 
         <script>
-            const sliders = document.querySelectorAll('.slider');
+            const sliderschuteiras = document.querySelectorAll('.slider');
 
             sliders.forEach(slider => {
                 const slides = slider.querySelectorAll('.slide');
@@ -112,109 +126,214 @@
         </script>
     </section>
 
-
-
-
-    <!-- CAMISAS DE TIME  -->
     <section>
-        
-        <h3>Camisas de Time:</h3>
-        <div>
-            <img id="camisa-botafogo" src="img/Camisas//botafogo1/botafogo.png" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/inter/camisa.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/palmeiras/palmeiras.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/botafogo2/botafogo.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/unicas/camisaSp.webp" alt="camisaTime">
+        <div class="produtos-container">
+            <div class="section-produto">
 
+                <!-- CAMISA BOTAFOGO -->
+                <div class="produto">
+                    <div class="slider" data-group="botafogo">
+                        <div class="slide active"><img src="img/Camisas/botafogo1/1.png" alt="Camisa Botafogo 1"></div>
+                        <div class="slide"><img src="img/Camisas/botafogo1/3.jpg" alt="Camisa Botafogo 2"></div>
+                    </div>
+                </div>
+
+                <!-- CAMISA INTERNACIONAL -->
+                <div class="produto">
+                    <div class="slider" data-group="internacional">
+                        <div class="slide active"><img src="img/Camisas/inter/1.jpg" alt="Camisa Inter"></div>
+                        <div class="slide"><img src="img/Camisas/inter/2.jpg    " alt="Camisa Inter 2"></div>
+                    </div>
+                </div>
+
+                <!-- CAMISA PALMEIRAS -->
+                <div class="produto">
+                    <div class="slider" data-group="palmeiras">
+                        <div class="slide active"><img src="img/Camisas/palmeiras/1.jpg" alt="Camisa Palmeiras"></div>
+                        <div class="slide"><img src="img/Camisas/palmeiras/2.jpg" alt="Camisa Palmeiras 2"></div>
+                    </div>
+                </div>
+
+                <!-- CAMISA CORINTHIANS -->
+                <div class="produto">
+                    <div class="slider" data-group="palmeiras">
+                        <div class="slide active"><img src="img/Camisas/corinthians/1.webp" alt="Camisa Palmeiras">
+                        </div>
+                        <div class="slide"><img src="img/Camisas/corinthians/2.jpg" alt="Camisa Palmeiras 2"></div>
+                    </div>
+                </div>
+
+                <!-- CAMISA GREMIO -->
+                <div class="produto">
+                    <div class="slider" data-group="spfc">
+                        <div class="slide active"><img src="img/Camisas/gremio/1.jpg" alt="Camisa Gremio"></div>
+                        <div class="slide"><img src="img/Camisas/gremio/2.jpg" alt="Camisa Gremio"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="camisa" id="text-camisa">Para ver mais Camisas de Time <br> clique e acesse:</h3>
+            <a class="botao-camisas" href="camisas.html">Camisas de Time</a>
         </div>
-        <h3>Para ver mais Camisas de Time <br> clique e acesse:</h3>
-        <a class="botao-camisas" href="camisas.html">Camisas de Time</a>
+        <script>
+            const sliders = document.querySelectorAll('.slider');
+
+            sliders.forEach(slider => {
+                const slides = slider.querySelectorAll('.slide');
+                let index = 0;
+
+                setInterval(() => {
+                    slides[index].classList.remove('active');
+                    index = (index + 1) % slides.length;
+                    slides[index].classList.add('active');
+                }, 4000);
+            });
+        </script>
+
     </section>
 
-    <!-- ACESSORIOS -->
+
+
+
     <section>
-        <h3>Acessórios Esportivo:</h3>
-        <div>
-            <img id="garrafa_corinthians" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
+        <div class="produtos-container">
+            <div class="section-produto">
+
+                <!-- TÊNIS 1 -->
+                <div class="produto">
+                    <div class="slider" data-group="tenis1">
+                        <div class="slide active"><img src="img/tenis/corri.jpg" alt="Nike Revolution 7 - 1"></div>
+                        <div class="slide"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 2"></div>
+                        <div class="slide"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 3"></div>
+                        <div class="slide"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 4"></div>
+                        <div class="slide"><img src="img/tenis/corri.jpg" alt="Nike Revolution 7 - 5"></div>
+                    </div>
+                </div>
+
+                <!-- TÊNIS 2 -->
+                <div class="produto">
+                    <div class="slider" data-group="tenis1">
+                        <div class="slide active"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 1"></div>
+                        <div class="slide"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 2"></div>
+                        <div class="slide"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 3"></div>
+                        <div class="slide"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 4"></div>
+                        <div class="slide"><img src="img/tenis/corrida.jpg" alt="Nike Revolution 7 - 5"></div>
+                    </div>
+                </div>
+
+                <!-- TÊNIS 3 -->
+                <div class="produto">
+                    <div class="slider" data-group="tenis1">
+                        <div class="slide active"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 1"></div>
+                        <div class="slide"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 2"></div>
+                        <div class="slide"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 3"></div>
+                        <div class="slide"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 4"></div>
+                        <div class="slide"><img src="img/tenis/nike.jpg" alt="Nike Revolution 7 - 5"></div>
+                    </div>
+                </div>
+
+
+                <!-- TÊNIS 4 -->
+                <div class="produto">
+                    <div class="slider" data-group="tenis1">
+                        <div class="slide active"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 1"></div>
+                        <div class="slide"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 2"></div>
+                        <div class="slide"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 3"></div>
+                        <div class="slide"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 4"></div>
+                        <div class="slide"><img src="img/tenis/tenis.jpg" alt="Nike Revolution 7 - 5"></div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="chuteira" id="text-chuteira">Para ver mais Tênis Esportivos <br> clique e acesse:</h3>
+            <a class="botao-chuteiras" href="tenis.html">Tênis Esportivos</a>
         </div>
-        <h3>Para ver mais Acessórios <br> clique e acesse:</h3>
-        <a class="botao-material" href="material.html">Material Esportivo</a>
+
+        <script>
+            document.querySelectorAll('.slider').forEach(slider => {
+                const slides = slider.querySelectorAll('.slide');
+                let index = 0;
+
+                setInterval(() => {
+                    slides[index].classList.remove('active');
+                    index = (index + 1) % slides.length;
+                    slides[index].classList.add('active');
+                }, 4000);
+            });
+        </script>
+
     </section>
 
-    <!-- TENIS-->
     <section>
-        <h3>Tênis Esportivos:</h3>
-        <div>
-            <img id="tenis_nike" src="img/tenis/corri.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/corrida.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/nike.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/tenis.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/nike.jpg" alt="tenis">
+        <div class="produtos-container">
+            <div class="section-produto">
+
+                <!-- ACESSÓRIOS 1 -->
+                <div class="produto">
+                    <div class="slider" data-group="acessorios">
+                        <div class="slide active"><img src="img/materialSport/garrafaCorinthias.webp" alt="Acessório 1">  </div>
+                        <div class="slide"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 2"></div>
+                        <div class="slide"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 3"></div>
+                        <div class="slide"><img src="img/materialSport/garrafaCorinthias.webp" alt="Acessório 4"></div>
+                        <div class="slide"><img src="img/materialSport/garrafaCorinthias.webp" alt="Acessório 5"></div>
+                    </div>
+                </div>
+
+                 <!-- ACESSÓRIOS 2 -->
+                <div class="produto">
+                    <div class="slider" data-group="acessorios">
+                        <div class="slide active"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 1"></div>
+                        <div class="slide"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 2"></div>
+                        <div class="slide"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 3"></div>
+                        <div class="slide"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 4"></div>
+                        <div class="slide"><img src="img/materialSport/caneca_corinthians.jpg" alt="Acessório 5"></div>
+                    </div>
+                </div>
+
+                    <!-- ACESSÓRIOS 3 -->
+                <div class="produto">
+                    <div class="slider" data-group="acessorios">
+                        <div class="slide active"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 1"></div>
+                        <div class="slide"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 2"></div>
+                        <div class="slide"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 3"></div>
+                        <div class="slide"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 4"></div>
+                        <div class="slide"><img src="img/materialSport/copo_vasco.jpg" alt="Acessório 5"></div>
+                    </div>
+                </div>
+
+                <!-- ACESSÓRIOS 3 -->
+                <div class="produto">
+                    <div class="slider" data-group="acessorios">
+                        <div class="slide active"><img src="img/materialSport/copo_botafogo.jpg" alt="Acessório 1"></div>
+                        <div class="slide"><img src="img/materialSport/copo_botafogo.jpg" alt="Acessório 2"></div>
+                        <div class="slide"><img src="img/materialSport/copo_botafogo.jpg" alt="Acessório 3"></div>
+                        <div class="slide"><img src="img/materialSport/copo_botafogo.jpg" alt="Acessório 4"></div>
+                        <div class="slide"><img src="img/materialSport/copo_botafogo.jpg" alt="Acessório 5"></div>
+                    </div>
+                </div>
+
+                
+            </div>
+                <h3 class="chuteira" id="text-chuteira">Para ver mais Acessórios <br> clique e acesse:</h3>
+                <a class="botao-chuteiras" href="material.html">Material Esportivo</a>
         </div>
-        <h3>Para ver mais Tênis <br> clique e acesse:</h3>
-        <a class="botao-tenis" href="tenis.html">Tênis Esportivos</a>
+        <script>
+            document.querySelectorAll('.slider').forEach(slider => {
+                const slides = slider.querySelectorAll('.slide');
+                let index = 0;
+
+                setInterval(() => {
+                    slides[index].classList.remove('active');
+                    index = (index + 1) % slides.length;
+                    slides[index].classList.add('active');
+                }, 4000);
+            });
+        </script>
+
     </section>
 
-    <!-- CHUTEIRAS -->
-    <section>
-        <div>
-            <img id="azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="">
-            <img class="chuteira-img" id="preta" src="img/newChuteiras/chuteira preta/brack.jpg" alt="">
-            <img class="chuteira-img" id="rosa" src="img/newChuteiras/chuteira rosa/pik.jpg" alt="">
-            <img class="chuteira-img" id="verde" src="img/newChuteiras/chuteira verde/green.jpg" alt="">
-            <img class="chuteira-img" id="azul" src="img/newChuteiras/chuteira azul/naike.jpg" alt="">
-        </div>
-        <h3>Para ver mais Chuteiras <br> clique e acesse:</h3>
-        <a class="botao-chuteiras" href="chuteiras.html">Chuteiras</a>
-        <!-- fim da parte das chuteiras -->
-    </section>
 
-    <!-- CAMISAS DE TIME  -->
-    <section>
-        <h3>Camisas de Time:</h3>
-        <div>
-            <img id="camisa-botafogo" src="img/Camisas//botafogo1/botafogo.png" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/inter/camisa.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/palmeiras/palmeiras.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/botafogo2/botafogo.jpg" alt="camisaTime">
-            <img class="camisas-img" src="img/Camisas/unicas/camisaSp.webp" alt="camisaTime">
 
-        </div>
-        <h3>Para ver mais Camisas de Time <br> clique e acesse:</h3>
-        <a class="botao-camisas" href="camisas.html">Camisas de Time</a>
-    </section>
-
-    <!-- ACESSORIOS -->
-    <section>
-        <h3>Acessórios Esportivo:</h3>
-        <div>
-            <img id="garrafa_corinthians" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-            <img class="acessorios" src="img/materialSport/garrafaCorinthias.webp" alt="">
-        </div>
-        <h3>Para ver mais Acessórios <br> clique e acesse:</h3>
-        <a class="botao-material" href="material.html">Material Esportivo</a>
-    </section>
-
-    <!-- TENIS-->
-    <section>
-        <h3>Tênis Esportivos:</h3>
-        <div>
-            <img id="tenis_nike" src="img/tenis/corri.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/corrida.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/nike.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/tenis.jpg" alt="tenis">
-            <img class="tenis" src="img/tenis/nike.jpg" alt="tenis">
-        </div>
-        <h3>Para ver mais Tênis <br> clique e acesse:</h3>
-        <a class="botao-tenis" href="tenis.html">Tênis Esportivos</a>
-    </section>
 
 
 </body>
