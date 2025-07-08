@@ -29,17 +29,17 @@ header {
     z-index: 1000;
 }
 
-/* Navegação */
+
 nav {
     background-color: #1e3a75;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 35px;
-    /* margin: 25px; */
+    margin-top: 130px; 
     flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 nav a {
@@ -47,7 +47,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1em;
     background-color: #fff;
     border: 2px solid #e0e0e0;
@@ -73,51 +73,92 @@ main {
 
 /* Seções gerais */
 .titulo{
+  text-align: center;
   background-color: #fff;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin: 40px auto;
-  max-width: none;
   width: 100%;
-  border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container-produtos{
+    
+  display: flex;
+  flex-wrap: wrap; /* Quebra linha se não couber */
+  gap: 20px; /* Espaço entre eles */
+  justify-content: center;
+  padding: 20px;
 
 }
+
 /* Seção principal destacada */
 .destaque-produto {
-  width: 100%; /* ⬅️ Faz a section ocupar 100% da largura da página */
-  max-width: none; /* ⬅️ Remove o limite anterior de largura */
+  width: 100%; /*⬅️ Faz a section ocupar 100% da largura da página*/
+  max-width: none; /* ⬅️ Remove o limite anterior de largura*/
   margin: 40px auto;
-  padding: 30px; /* ⬅️ Aumenta o espaçamento interno */
+  padding: 30px; /*⬅️ Aumenta o espaçamento interno*/
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  text-align: left; /* ⬅️ Alinha o conteúdo à esquerda */
-  display: flex; /* ⬅️ Torna a section um flex container */
-  justify-content: center; /* ⬅️ Centraliza o conteúdo internamente */
+  border-radius: 10px;
+  text-align: left;/* ⬅️ Alinha o conteúdo à esquerda*/
+  display: flex; /*⬅️ Torna a section um flex container*/
+  justify-content: center; 
 }
+
+/* O seu destaque-produto vira o "card" */
+.destaque-produto {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.destaque-produto:hover {
+  transform: scale(1.02);
+}
+
+
 
 /* Container para imagem e informações lado a lado */
-.conteudo-produto {
+.container-produtos {
   display: flex;
-  flex-wrap: wrap; /* ⬅️ Responsivo: quebra em telas pequenas */
-  gap: 30px; /* ⬅️ Espaço entre imagem e info */
-  width: 100%;
-  max-width: 1200px; /* ⬅️ Limita largura do conteúdo */
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
 }
 
-/* Slider de imagem */
-.slider {
-
-  flex: 1 1 900px; /* ⬅️ Flexível, mínimo de 500px */
-  height: 1000px; /* ⬅️ Aumenta altura do carrossel */
+/* Cada card de produto */
+.destaque-produto {
+    margin-top: 0;
+  flex: 400px; /* cresce, mínimo 300px */
+  /* max-width: 1550px; */
+  background: #fff;
+  border-radius: 15px;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
   overflow: hidden;
-  border-radius: 10px;
-  position: relative;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Slides */
+.destaque-produto:hover {
+  transform: scale(1.02);
+}
+
+/* slider no topo do card */
+.slider {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
 .slide {
   position: absolute;
   top: 0;
@@ -131,34 +172,29 @@ main {
 .slide.active {
   opacity: 1;
   z-index: 1;
-  
 }
 
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-    
+  border: 2px solid #333;
 }
 
-/* Informações ao lado da imagem */
+/* infos abaixo da imagem */
 .info-produto {
-  flex: 1 1 600px; /* ⬅️ Flexível, mínimo de 300px */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-
+  width: 100%;
+  text-align: center;
+  padding: 15px;
 }
 
 .info-produto h2 {
-  font-size: 1.6em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
 .info-produto h3 {
-  font-size: 1.3em;
+  font-size: 1em;
   margin-bottom: 15px;
 }
 
@@ -188,6 +224,7 @@ button.comprar {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  
 }
 
 button.comprar:hover {
@@ -211,120 +248,170 @@ footer div {
     margin-bottom: 10px;
 }
 
-/*  CARRINHO */
+/* CARRINHO */
 .carrinho {
-    width: 100%;
-    max-width: 10000px;
-    margin: 25px auto;
-    /* Centraliza no meio da página com espaço acima */
-    background-color: #fff;
-    padding: 25px;
-    /* border-radius: 15px; */
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: block;
+  position: fixed;
+  top: 119px;
+  right: 0;
+  width: 900px;
+  max-height: 100vh;
+  background-color: #fff;
+  border-radius: 20px 0 0 20px;
+  padding: 25px;
+  box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  z-index: 1000;
+  overflow-y: auto;
+  margin-top: 24px;
 
+  
+  transform: translateX(100%); /* começa escondido */
+  transition: transform 0.3s ease;
 }
 
+/* Quando carrinho tem classe .aberto ele aparece */
+.carrinho.aberto {
+  transform: translateX(0);
+}
+
+/* BOTÃO DE SETINHA FIXO */
+#toggle-carrinho {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #3e650c;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 1100;
+  transition: background-color 0.3s;
+}
+
+#toggle-carrinho:hover {
+  background-color: #1e3a75;
+}
+
+/* RESTANTE DO SEU CSS DO CARRINHO */
 .carrinho h2,
 .carrinho h3 {
-    color: #333;
-    margin-bottom: 20px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.lista-carrinho {
-    list-style: none;
-    padding: 0;
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  margin-bottom: 15px;
 }
 
-.itensCarrinho {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1em;
+.carrinho li {
+  font-size: 35px;
+  margin-bottom: 12px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  width: 800px;
+  border-bottom: 1px solid #eee;
 }
 
-.itensCarrinho strong {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.itensCarrinho span {
-    margin-left: 10px;
-}
-
+.carrinho li button,
+#finalizarCompra,
+button,
 .btn-remover {
-    background-color: #fff;
-    border: 2px solid #e0e0e0;
-    border-radius: 15px;
-    padding: 10px 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1em;
+  background-color: #0c2865;
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
+.carrinho li button:hover,
+#finalizarCompra:hover,
+button:hover,
 .btn-remover:hover {
-    background-color: #e0e0e0;
-    color: #333;
+  background-color: #1e3a75;
+  transform: scale(1.03);
 }
 
-#mensagem-carrinho {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    font-size: 1.2em;
-    z-index: 9999;
-    display: none;
-    transition: opacity 0.5s ease;
+.carrinho {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0c2865;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  align-items: center;
 }
 
-.comprar {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 1em;
-    background-color: #1e3a75;
-    border: 2px solid #e0e0e0;
-    transition: 0.3s;
+ .total{
+  align-items: center;
+ }
+
+.carrinho.aberto {
+  transform: translateX(0);
 }
 
 #finalizarCompra {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.1em;
-    background-color: #1e3a75;
-    border: 2px solid #e0e0e0;
-    transition: 0.3s;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 40px;
 }
 
-button {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1.1em;
-    background-color: #435376;
-    border: 2px solid #e0e0e0;
-    transition: 0.3s;
+/* MENSAGEM FLUTUANTE */
+#mensagem-carrinho {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  z-index: 9999;
+  display: none;
+  transition: opacity 0.5s ease;
 }
+
+/* BOTÃO COMPRAR */
+.comprar {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1em;
+  background-color: #1e3a75;
+  border: none;
+  transition: 0.3s;
+}
+
+.comprar:hover {
+  background-color: #2b4a90;
+}
+
+/* QR CODE CENTRALIZADO */
+#qrcode {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
 
 /* Área do PIX */
 #areaPix {
