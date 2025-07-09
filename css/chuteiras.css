@@ -23,7 +23,7 @@ header {
     color: #ffff;
     text-align: center;
     padding: 15px;
-    font-size: 90px;  /* ajustado */
+    font-size: 100px;  /* ajustado */
     font-weight: bold;
     box-shadow: none; /* sem sombra */
     z-index: 1000;
@@ -32,12 +32,12 @@ header {
 
 nav {
     background-color: #1e3a75;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 35px;
-    margin-top: 130px; 
+    gap: 20px;
+    margin-top: 140px; 
     flex-wrap: wrap;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
@@ -78,7 +78,7 @@ main {
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -98,7 +98,7 @@ main {
   width: 100%; /*⬅️ Faz a section ocupar 100% da largura da página*/
   max-width: none; /* ⬅️ Remove o limite anterior de largura*/
   margin: 40px auto;
-  padding: 30px; /*⬅️ Aumenta o espaçamento interno*/
+  padding: 20px; /*⬅️ Aumenta o espaçamento interno*/
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -152,8 +152,8 @@ main {
 
 /* slider no topo do card */
 .slider {
-  width: 100%;
-  height: 450px;
+  width: 430px;
+  height: 370px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -178,7 +178,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 2px solid #333;
+
 }
 
 /* infos abaixo da imagem */
@@ -189,18 +189,18 @@ main {
 }
 
 .info-produto h2 {
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 10px;
 }
 
 .info-produto h3 {
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 15px;
 }
 
 .info-produto button {
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 0.5em;
   background-color: #0c2865;
   color: white;
   border: none;
@@ -220,7 +220,7 @@ button.comprar {
   padding: 12px 20px;
   border-radius: 10px;
   border: 2px solid #e0e0e0;
-  font-size: 1em;
+  font-size: 0.5em;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -253,7 +253,7 @@ footer div {
   position: fixed;
   top: 119px;
   right: 0;
-  width: 900px;
+  width: 700px;
   max-height: 100vh;
   background-color: #fff;
   border-radius: 20px 0 0 20px;
@@ -263,8 +263,6 @@ footer div {
   z-index: 1000;
   overflow-y: auto;
   margin-top: 24px;
-
-  
   transform: translateX(100%); /* começa escondido */
   transition: transform 0.3s ease;
 }
@@ -298,7 +296,9 @@ footer div {
 /* RESTANTE DO SEU CSS DO CARRINHO */
 .carrinho h2,
 .carrinho h3 {
+  align-items: center;
   color: #333;
+  width: 322px;
   margin-bottom: 20px;
 }
 
@@ -308,17 +308,18 @@ footer div {
   max-height: 50vh;
   overflow-y: auto;
   margin-bottom: 15px;
+  border: 2px solid green;
 }
 
 .carrinho li {
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 12px;
   color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
-  width: 800px;
+  width: 600px;
   border-bottom: 1px solid #eee;
 }
 
@@ -352,6 +353,7 @@ button:hover,
   transform: translateX(100%);
   transition: transform 0.3s ease;
   align-items: center;
+  
 }
 
  .total{
