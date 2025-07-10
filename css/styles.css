@@ -207,30 +207,46 @@ footer div {
 /* Responsividade*/
  @media (min-width: 320px)  and (max-width:900px){
     
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+
     header{
-        font-size: 50px;
-        margin-top: 2px;
+        font-size: 40px;
+        margin-top: 0px;
         padding: 10px;
         display: block;
     }
 
+    nav{
+        margin-top: 60px;
+    }
     
     #pagina_inicial {
         max-width: 300px;   
         border-radius: 15px;
         padding: 10px;
         font-size: 20px;
+        border: 2px solid #e0e0e0;
+        margin-top: 0;
     }  
 
     h2,h3{
 
-        font-size:22px;
-        margin: 4px;
-        padding: 2px;
+        font-size:16px;
+        
     } 
 
-    /*img aparecera  */
     
+
+    .slide{
+        display: flex;
+    }
+
+    /*img aparecera  */
+/*     
         #azul{
             max-width: 175px;           
         }
@@ -243,10 +259,10 @@ footer div {
         }
         #tenis_nike{
             max-width: 175px;
-        } 
+        }  */
 
     /* img ocultas  */
-
+/* 
          .chuteira-img{
             display: none;
         }
@@ -258,6 +274,25 @@ footer div {
         }
         .tenis{
             display: none;
+        } */
+
+        .produto{
+            height: 200px;
+        }
+
+        .produto-camisas{
+            width:  214px;
+            height: 283px;
+        }
+
+         .produto-gremio{
+            width:  200px;
+            height: 300px;
+        }
+        img{
+            height: 120px;
+            width: 120px;
+            max-height: 280px;;
         }
 
         /* BOTOES OCULTOS */
