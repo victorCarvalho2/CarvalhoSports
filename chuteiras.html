@@ -8,13 +8,13 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Carvalho Sport's - Chuteiras</title>
   <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
-
 </head>
 
 <body>
   <header>
     Carvalho Sport's
   </header>
+
   <nav>
     <a id="pagina_inicial" href="index.html">Página Inicial</a>
     <a class="chuteiras" href="chuteiras.html">Chuteiras</a>
@@ -25,21 +25,17 @@
   </nav>
 
   <section class="titulo">
-
     <h2>Na Carvalho Sport's, temos:</h2>
     <h3>Todos os tipos de chuteiras que você precisar.</h3>
-
   </section>
 
 
-  <div class="container-produtos">
+  <div class="container-produtos"> <!-- inicio do da classe principal  -->
 
-    <!-- PRODUTO 1 -->
+    <!-- Produto 1-->
     <section class="destaque-produto">
-
       <div class="conteudo-produto">
 
-        <!-- SLIDE DE IMAGENS -->
         <div class="slider" data-group="nike-azul">
           <div class="slide active"><img src="img/newChuteiras/chuteira azul/1.jpg" alt=""></div>
           <div class="slide"><img src="img/newChuteiras/chuteira azul/2.jpg" alt=""></div>
@@ -47,15 +43,16 @@
           <div class="slide"><img src="img/newChuteiras/chuteira azul/4.jpg" alt=""></div>
           <div class="slide"><img src="img/newChuteiras/chuteira azul/5.jpg" alt=""></div>
         </div>
-
-        <!-- INFORMAÇÕES DO PRODUTO -->
+        
         <div class="info-produto">
-          <h2>Chuteira Nike Phantom GT2 Elite</h2>
+          <h2>Nike Phantom GT2 Elite</h2>
           <h3>Disponível por: R$ 997,49</h3>
           <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
             Carrinho</button>
         </div>
+
       </div>
+
       <script>
         document.querySelectorAll('.slider').forEach(slider => {
           const slides = slider.querySelectorAll('.slide');
@@ -68,16 +65,16 @@
           }, 4000); // Troca a cada 4 segundos
         });
       </script>
-    </section>
 
-    <!-- PRODUTO 2 -->
-    <section class="destaque-produto">
+    </section> <!-- fechando o primeiro produto -->
 
+    
+    <section class="destaque-produto"> <!-- PRODUTO 2 -->
       <div class="conteudo-produto">
 
         <!-- SLIDE DE IMAGENS -->
         <div class="slider" data-group="nike-preta">
-          <div class="slide active"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
+          <div class="slide active"><img src="img/neewChuteiras/chuteira preta/1.jpg" alt=""></div>
           <div class="slide"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
           <div class="slide"><img src="img/newChuteiras/chuteira preta/3.jpg" alt=""></div>
           <div class="slide"><img src="img/newChuteiras/chuteira_preta/4.jpg" alt=""></div>
@@ -86,12 +83,14 @@
 
         <!-- INFORMAÇÕES DO PRODUTO -->
         <div class="info-produto">
-          <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
-          <h3>Disponivel por apenas: <br> R$533,99</h3>
+          <h2>Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
+          <h3>Disponivel por apenas: R$ 533,99</h3>
           <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
             data-preco="1133.99">Adicionar ao Carrinho</button>
         </div>
+
       </div>
+      
       <script>
         document.querySelectorAll('.slider').forEach(slider => {
           const slides = slider.querySelectorAll('.slide');
@@ -104,799 +103,235 @@
           }, 4000); // Troca a cada 4 segundos
         });
       </script>
-    </section>
-
-    <!-- PRODUTO 3 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar
-            ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 4 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-
-        <div class="slider" data-group="nike-rosa">
-          <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX Academy</h2>
-          <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar
-            ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- Produto 5 -->
-    <section class="destaque-produto">
-
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-azul">
-          <div class="slide active"><img src="img/newChuteiras/chuteira azul/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/5.jpg" alt=""></div>
-        </div>
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GT2 Elite</h2>
-          <h3>Disponível por: R$ 997,49</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 6 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 7 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="adidas-verde">
-          <div class="slide active"><img src="img/newChuteiras/prata-verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Adidas X CrazyFast.1</h2>
-          <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 8 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="prata-laranja">
-          <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
-          <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric"
-            data-preco="2184.99">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 4 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-
-        <div class="slider" data-group="nike-rosa">
-          <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX Academy</h2>
-          <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar
-            ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 2 -->
-    <section class="destaque-produto">
-
-      <div class="conteudo-produto">
-
-        <!-- SLIDE DE IMAGENS -->
-        <div class="slider" data-group="nike-preta">
-          <div class="slide active"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira_preta/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/5.jpg" alt=""></div>
-        </div>
-
-        <!-- INFORMAÇÕES DO PRODUTO -->
-        <div class="info-produto">
-          <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
-          <h3>Disponivel por apenas: <br> R$533,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
-            data-preco="1133.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-
-    <!-- PRODUTO 6 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-
-    <!-- PRODUTO 6 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-
-    <!-- PRODUTO 3 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar
-            ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 4 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-
-        <div class="slider" data-group="nike-rosa">
-          <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX Academy</h2>
-          <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar
-            ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- Produto 5 -->
-    <section class="destaque-produto">
-
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-azul">
-          <div class="slide active"><img src="img/newChuteiras/chuteira azul/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira azul/5.jpg" alt=""></div>
-        </div>
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GT2 Elite</h2>
-          <h3>Disponível por: R$ 997,49</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GT2 Elite" data-preco="997.49">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 6 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 7 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="adidas-verde">
-          <div class="slide active"><img src="img/newChuteiras/prata-verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Adidas X CrazyFast.1</h2>
-          <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 8 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="prata-laranja">
-          <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
-          <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric"
-            data-preco="2184.99">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 4 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-
-        <div class="slider" data-group="nike-rosa">
-          <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX Academy</h2>
-          <h3>Disponivel por apenas: <br>R$ 831,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar
-            ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 2 -->
-    <section class="destaque-produto">
-
-      <div class="conteudo-produto">
-
-        <!-- SLIDE DE IMAGENS -->
-        <div class="slider" data-group="nike-preta">
-          <div class="slide active"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira_preta/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira preta/5.jpg" alt=""></div>
-        </div>
-
-        <!-- INFORMAÇÕES DO PRODUTO -->
-        <div class="info-produto">
-          <h2>Chuteira Nike Zoom Mercurial Superfly 9 Elite XXV</h2>
-          <h3>Disponivel por apenas: <br> R$533,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Zoom Mercurial Superfly 9 Elite XXV"
-            data-preco="1133.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 6 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="nike-verde">
-          <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Tiempo Legend 10 Elite</h2>
-          <h3>Disponivel por apenas: <br>R$ 989,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
-            data-preco="989.99">Adicionar ao Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 7 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="adidas-verde">
-          <div class="slide active"><img src="img/newChuteiras/prata-verde/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/prata-verde/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Adidas X CrazyFast.1</h2>
-          <h3>Disponivel por apenas: <br>R$ 799,95</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-
-    <!-- PRODUTO 8 -->
-    <section class="destaque-produto">
-      <div class="conteudo-produto">
-        <div class="slider" data-group="prata-laranja">
-          <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
-          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
-        </div>
-
-        <div class="info-produto">
-          <h2>Chuteira Nike Phantom GX II Elite Campo Eletric</h2>
-          <h3>Disponivel por apenas: <br>R$ 2.184,99</h3>
-          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric"
-            data-preco="2184.99">Adicionar ao
-            Carrinho</button>
-        </div>
-      </div>
-      <script>
-        document.querySelectorAll('.slider').forEach(slider => {
-          const slides = slider.querySelectorAll('.slide');
-          let index = 0;
-
-          setInterval(() => {
-            slides[index].classList.remove('active');
-            index = (index + 1) % slides.length;
-            slides[index].classList.add('active');
-          }, 4000); // Troca a cada 4 segundos
-        });
-      </script>
-    </section>
-  </div>
-
-  <!-- Carrinho -->
-  <button id="toggle-carrinho">➡</button>
-
-  <div class="carrinho">
-    <h3>Carrinho de Compras</h3>
-    <ul id="itensCarrinho"></ul>
-    <p class="total">Total: R$ 0,00</p>
-    <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
-    <div id="qrcode" style="margin-top: 20px; text-align: center;"></div>
-  </div>
-
-  <script>
-    const toggleBtn = document.getElementById('toggle-carrinho');
-    const carrinho = document.querySelector('.carrinho');
-
-    toggleBtn.addEventListener('click', () => {
-      carrinho.classList.toggle('aberto');
-      toggleBtn.innerHTML = carrinho.classList.contains('aberto') ? '⬅' : '➡';
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
-
-  <script>
-    let itensCarrinho = []; // <<< trocamos aqui o nome do array
-
-    function atualizarCarrinho() {
-      const carrinhoUl = document.getElementById("itensCarrinho");
-      const total = document.querySelector(".total");
-      carrinhoUl.innerHTML = '';
-      let totalCarrinho = 0;
-
-      itensCarrinho.forEach((item, index) => {
-        const li = document.createElement("li");
-        li.innerHTML = `${item.nome} - R$ ${item.preco.toFixed(2)} <button onclick="removerItem(${index})">Remover</button>`;
-        carrinhoUl.appendChild(li);
-        totalCarrinho += item.preco;
+    
+  </section> <!-- fechando o 2° produto -->
+
+
+  <section class="destaque-produto">      <!-- PRODUTO 3 -->
+    <div class="conteudo-produto">
+
+       <div class="slider" data-group="nike-verde">
+       <div class="slide active"><img src="img/newChuteiras/chuteira verde/1.jpg" alt=""></div>
+       <div class="slide"><img src="img/newChuteiras/chuteira verde/2.jpg" alt=""></div>
+       <div class="slide"><img src="img/newChuteiras/chuteira verde/3.jpg" alt=""></div>
+       <div class="slide"><img src="img/newChuteiras/chuteira verde/4.jpg" alt=""></div>
+       <div class="slide"><img src="img/newChuteiras/chuteira verde/5.jpg" alt=""></div>
+    </div>
+
+      <div class="info-produto">
+       <h2>Nike Tiempo Legend 10 Elite</h2>
+       <h3>Disponivel por apenas: R$ 989,99</h3>
+       <button class="comprar" id="comprarMobile" data-nome="Nike Tiempo Legend 10 Elite"
+        data-preco="989.99">Adicionar ao Carrinho</button>
+     </div>
+
+    </div>
+      
+    <script>
+      document.querySelectorAll('.slider').forEach(slider => {
+      const slides = slider.querySelectorAll('.slide');
+      let index = 0;
+
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 4000); // Troca a cada 4 segundos
       });
+    </script>
 
-      total.innerHTML = `Total: R$ ${totalCarrinho.toFixed(2)}`;
-    }
+  </section>     <!-- fechando o 3° produto -->
 
-    function adicionarCarrinho(event) {
-      const nome = event.target.getAttribute("data-nome");
-      const preco = parseFloat(event.target.getAttribute("data-preco"));
-      itensCarrinho.push({ nome, preco }); // <<< usa o novo array
-      atualizarCarrinho();
-      alert(`✅ "${nome}" foi adicionado ao carrinho!`);
-    }
+   
+    <section class="destaque-produto">    <!-- PRODUTO 4 -->
+      <div class="conteudo-produto">
 
-    function removerItem(index) {
-      itensCarrinho.splice(index, 1); // <<< usa o novo array
-      atualizarCarrinho();
-    }
+        <div class="slider" data-group="nike-rosa">
+          <div class="slide active"><img src="img/newChuteiras/chuteira rosa/1.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira rosa/2.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira rosa/3.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira rosa/4.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira rosa/5.jpg" alt=""></div>
+        </div>
 
-    document.querySelectorAll(".comprar").forEach(button => {
-      button.addEventListener("click", adicionarCarrinho);
-    });
+        <div class="info-produto">
+          <h2>Nike Phantom GX Academy</h2>
+          <h3>Disponivel por apenas: R$ 831,99</h3>
+          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX Academy" data-preco="831.99">Adicionar
+            ao Carrinho</button>
+        </div>
+      </div>
+      <script>
+        document.querySelectorAll('.slider').forEach(slider => {
+          const slides = slider.querySelectorAll('.slide');
+          let index = 0;
 
-    document.getElementById("finalizarCompra").addEventListener("click", () => {
-      if (itensCarrinho.length === 0) {
-        alert("Seu carrinho está vazio.");
-        return;
+          setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+          }, 4000); // Troca a cada 4 segundos
+        });
+      </script>
+    </section>
+
+   
+    <section class="destaque-produto">    <!-- PRODUTO 5 -->
+      <div class="conteudo-produto">
+        <div class="slider" data-group="adidas-verde">
+          <div class="slide active"><img src="img/newChuteiras/prata-verde/1.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/prata-verde/3.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/prata-verde/2.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/prata-verde/4.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/prata-verde/5.jpg" alt=""></div>
+        </div>
+
+        <div class="info-produto">
+          <h2>Adidas X CrazyFast.1</h2>
+          <h3>Disponivel por apenas: R$ 799,95</h3>
+          <button class="comprar" id="comprarMobile" data-nome="Adidas X CrazyFast.1" data-preco="799.95">Adicionar ao
+            Carrinho</button>
+        </div>
+      </div>
+
+      <script>
+        document.querySelectorAll('.slider').forEach(slider => {
+          const slides = slider.querySelectorAll('.slide');
+          let index = 0;
+
+          setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+          }, 4000); // Troca a cada 4 segundos
+        });
+      </script>
+    </section>
+
+    <!-- PRODUTO 6 -->
+    <section class="destaque-produto">
+      <div class="conteudo-produto">
+        <div class="slider" data-group="prata-laranja">
+          <div class="slide active"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira-prata/2.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira-prata/1.jpg" alt=""></div>
+          <div class="slide"><img src="img/newChuteiras/chuteira-prata/5.jpg" alt=""></div>
+        </div>
+
+        <div class="info-produto">
+          <h2>Nike Phantom GX II Elite Campo Eletric</h2>
+          <h3>Disponivel por apenas: R$ 2.184,99</h3>
+          <button class="comprar" id="comprarMobile" data-nome="Nike Phantom GX II Elite Campo Eletric"
+            data-preco="2184.99">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+      <script>
+        document.querySelectorAll('.slider').forEach(slider => {
+          const slides = slider.querySelectorAll('.slide');
+          let index = 0;
+
+          setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+          }, 4000); // Troca a cada 4 segundos
+        });
+      </script>
+    </section>
+
+
+    <!-- Carrinho -->
+    <button id="toggle-carrinho">➡</button>
+
+    <div class="carrinho">
+      <h3>Carrinho de Compras</h3>
+      <ul id="itensCarrinho"></ul>
+      <p class="total">Total: R$ 0,00</p>
+      <button id="finalizarCompra" class="finalizarMobile">Finalizar Compra</button>
+      <div id="qrcode" style="margin-top: 20px; text-align: center;"></div>
+    </div>
+
+    <script>
+      const toggleBtn = document.getElementById('toggle-carrinho');
+      const carrinho = document.querySelector('.carrinho');
+
+      toggleBtn.addEventListener('click', () => {
+        carrinho.classList.toggle('aberto');
+        toggleBtn.innerHTML = carrinho.classList.contains('aberto') ? '⬅' : '➡';
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+
+    <script>
+      let itensCarrinho = []; // <<< trocamos aqui o nome do array
+
+      function atualizarCarrinho() {
+        const carrinhoUl = document.getElementById("itensCarrinho");
+        const total = document.querySelector(".total");
+        carrinhoUl.innerHTML = '';
+        let totalCarrinho = 0;
+
+        itensCarrinho.forEach((item, index) => {
+          const li = document.createElement("li");
+          li.innerHTML = `${item.nome} - R$ ${item.preco.toFixed(2)} <button onclick="removerItem(${index})">Remover</button>`;
+          carrinhoUl.appendChild(li);
+          totalCarrinho += item.preco;
+        });
+
+        total.innerHTML = `Total: R$ ${totalCarrinho.toFixed(2)}`;
       }
 
-      const linkForm = "https://forms.gle/hRB8A37AzR6hQXAQ7";
-      const qrCodeDiv = document.getElementById("qrcode");
-      qrCodeDiv.innerHTML = "";
+      function adicionarCarrinho(event) {
+        const nome = event.target.getAttribute("data-nome");
+        const preco = parseFloat(event.target.getAttribute("data-preco"));
+        itensCarrinho.push({ nome, preco }); // <<< usa o novo array
+        atualizarCarrinho();
+        alert(`✅ "${nome}" foi adicionado ao carrinho!`);
+      }
 
-      QRCode.toCanvas(linkForm, { width: 256 }, function (err, canvas) {
-        if (err) {
-          alert("Erro ao gerar QR Code");
+      function removerItem(index) {
+        itensCarrinho.splice(index, 1); // <<< usa o novo array
+        atualizarCarrinho();
+      }
+
+      document.querySelectorAll(".comprar").forEach(button => {
+        button.addEventListener("click", adicionarCarrinho);
+      });
+
+      document.getElementById("finalizarCompra").addEventListener("click", () => {
+        if (itensCarrinho.length === 0) {
+          alert("Seu carrinho está vazio.");
           return;
         }
 
-        qrCodeDiv.appendChild(canvas);
+        const linkForm = "https://forms.gle/hRB8A37AzR6hQXAQ7";
+        const qrCodeDiv = document.getElementById("qrcode");
+        qrCodeDiv.innerHTML = "";
 
-        const link = document.createElement("a");
-        link.href = linkForm;
-        link.target = "_blank";
-        link.style.display = "block";
-        link.style.marginTop = "10px";
-        link.style.fontSize = "16px";
-        link.style.color = "#1e3a75";
-        link.textContent = "📋 Clique aqui para dar seu feedback!";
-        qrCodeDiv.appendChild(link);
+        QRCode.toCanvas(linkForm, { width: 256 }, function (err, canvas) {
+          if (err) {
+            alert("Erro ao gerar QR Code");
+            return;
+          }
+
+          qrCodeDiv.appendChild(canvas);
+
+          const link = document.createElement("a");
+          link.href = linkForm;
+          link.target = "_blank";
+          link.style.display = "block";
+          link.style.marginTop = "10px";
+          link.style.fontSize = "16px";
+          link.style.color = "#1e3a75";
+          link.textContent = "📋 Clique aqui para dar seu feedback!";
+          qrCodeDiv.appendChild(link);
+        });
+
+        alert("✅ Compra finalizada! Escaneie o QR Code ou clique no link para dar seu feedback.");
       });
-
-      alert("✅ Compra finalizada! Escaneie o QR Code ou clique no link para dar seu feedback.");
-    });
-  </script>
+    </script>
 
 
 </body>
