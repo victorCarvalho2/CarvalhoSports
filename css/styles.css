@@ -1,132 +1,148 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    /* Alterado para 'Roboto' */
-    font-size: xx-large;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  /* Alterado para 'Roboto' */
+  font-size: xx-large;
 }
 
 body {
-    background-color: #1e3a75;
-    /* Cor de fundo do corpo */
-    color: #333;
-    /* Texto escuro para maior legibilidade */
+  background-color: #1e3a75;
+  /* Cor de fundo do corpo */
+  color: #333;
+  /* Texto escuro para maior legibilidade */
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1e3a75;
-    color: #ffff;
-    text-align: center;
-    padding: 15px;
-    font-size: 90px;  /* ajustado */
-    font-weight: bold;
-    box-shadow: none; /* sem sombra */
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e3a75;
+  color: #ffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 100px;
+  /* ajustado */
+  font-weight: bold;
+  box-shadow: none;
+  /* sem sombra */
+  z-index: 1000;
 }
 
-/* Navegação */
+
 nav {
-    background-color: #1e3a75;
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    margin-top: 115px; 
-    flex-wrap: wrap;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  background-color: #1e3a75;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 140px;
+  flex-wrap: wrap;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 nav a {
-    color: #555;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 1em;
-    background-color: #fff;
-    border: 2px solid #e0e0e0;
-    transition: 0.3s;
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1em;
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #e0e0e0;
-    color: #333;
-    transform: scale(1.1);
+  background-color: #e0e0e0;
+  color: #333;
+  transform: scale(1.1);
 }
 
 /* Layout principal */
 main {
-    padding: 20px;
-    max-width: 12500px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-
+  padding: 20px;
+  max-width: 12500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-section {
+/* Seções gerais */
+.titulo{
+     text-align: center;
+  background-color: #fff;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 25px auto;
-  max-width: 100%;
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.titulo-2 {
   text-align: center;
+  background-color: #fff;
+  background-color: #fff;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+  padding: 30px;
+  margin: 20px auto;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.produtos-container {
+/* Container para imagem e informações lado a lado */
+.container-produtos {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 30px;
-}
-
-.section-produto {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 35px;
+  padding: 30px;
+  
 }
 
-.produto {
-  width: 320px;
-  background: #f8f8f8;
-  padding: 15px;
+/* Cada card de produto */
+.destaque-produto {
+  flex: 310px;
+  height: 400px;
+  background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
 }
 
+.destaque-produto:hover {
+  transform: scale(1.02);
+}
+
+/* slider no topo do card */
 .slider {
+  width: 430px;
+  height: 360px;
   position: relative;
-  width: 100%;
-  height: 340px;
-  overflow: hidden;
-  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+  top: 6%;
+  left: 10%;
+  opacity: 0;   
+  justify-content: center;
+  align-items: center;
   transition: opacity 1s ease-in-out;
+  
 }
 
 .slide.active {
@@ -135,192 +151,178 @@ section {
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-#text-chuteira {
-  display: flex;
+  width: 88%;
+  height: 88%;
   align-items: center;
+  justify-content:center ;
+  object-fit: cover;
 }
 
-a.botao-chuteiras {
-  display: inline-block;
-  color: #e0e0e0;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 10px;
-  transition: 0.3s;
+/* infos abaixo da imagem */
+.info-produto {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.info-produto h2 {
+  font-size: 0.6em;
+  margin-bottom: 10px;
+}
+
+.info-produto h3 {
+  font-size: 0.6em;
+  margin-bottom: 15px;
+}
+
+.info-produto button {
+  padding: 10px 20px;
+  font-size: 0.5em;
   background-color: #0c2865;
-  padding: 10px;
-  border-radius: 15px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-produto button:hover {
+  background-color: #1e3a75;
+}
+
+
+button.comprar {
+  background-color: #0c2865;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
   border: 2px solid #e0e0e0;
+  font-size: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-a.botao-chuteiras:hover {
+button.comprar:hover {
   background-color: #e0e0e0;
-  color: #333;
+  color: #0c2865;
 }
 
-
-
-a{
-    display: inline-block;
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 10px;
-    transition: 0.3s;
-    background-color: #0c2865;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: 2px solid #e0e0e0;
-} 
-
-/* Títulos */
-h2,
-h3,
-h4 {
-    color: #333;
-    margin-bottom: 15px;
-
-}
 
 /* Rodapé */
 footer {
-    background-color: #fff;
-    color: #333;
-    /* Texto mais claro no rodapé */
-    text-align: center;
-    padding: 20px;
-    
-    margin-top: 20px;
+  background-color: #0c2865;
+  color: #333;
+  /* Texto mais claro no rodapé */
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
 }
 
 footer div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 
-/* Responsividade*/
- @media (min-width: 320px)  and (max-width:900px){
-    
-    *{
-        margin: 0;
-        padding: 0;
-        
-    }
 
-    header{
-        font-size: 40px;
-        margin-top: 0px;
-        padding: 10px;
-        display: block;
-    }
 
-    nav{
-        margin-top: 60px;
-    }
-    
-    #pagina_inicial {
-        max-width: 300px;   
-        border-radius: 15px;
-        padding: 10px;
-        font-size: 20px;
-        border: 2px solid #e0e0e0;
-        margin-top: 0;
-    }  
+/* Responsividade */
+@media (min-width: 320px) and (max-width:900px) {
+  header {
+    font-size: 50px;
+    margin-top: 2px;
+    padding: 10px;
+    display: block;
+  }
 
-    h2,h3{
 
-        font-size:16px;
-        
-    } 
+  #pagina_inicial {
+    max-width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
+  }
 
-    
+  h2,
+  h3 {
 
-    .slide{
-        display: flex;
-    }
+    font-size: 22px;
+    margin: 4px;
+    padding: 2px;
+  }
 
-    /*img aparecera  */
-/*     
-        #azul{
-            max-width: 175px;           
-        }
 
-        #camisa-botafogo{
-            max-width: 175px;            
-        }
-        #garrafa_corinthians{
-            max-width: 175px;
-        }
-        #tenis_nike{
-            max-width: 175px;
-        }  */
+  #nike_azul {
+    max-width: 175px;
+  }
 
-    /* img ocultas  */
-/* 
-         .chuteira-img{
-            display: none;
-        }
-        .camisas-img{
-            display: none;
-        }
-        .acessorios{
-            display: none;
-        }
-        .tenis{
-            display: none;
-        } */
+  #nike_preta {
+    max-width: 175px;
+  }
 
-        .produto{
-            height: 200px;
-        }
+  #nike_rosa {
+    max-width: 175px;
+  }
 
-        .produto-camisas{
-            width:  214px;
-            height: 283px;
-        }
+  #nike_verde {
+    max-width: 175px;
+  }
 
-         .produto-gremio{
-            width:  200px;
-            height: 300px;
-        }
-        img{
-            height: 120px;
-            width: 120px;
-            max-height: 280px;;
-        }
+  #adidas_verde {
+    max-width: 175px;
+  }
 
-        /* BOTOES OCULTOS */
-        .camisas, .chuteiras, 
-        .tenis,.acessorios, 
-        .sair{
-            display: none;
-        }
+  #nike_prata {
+    max-width: 175px;
+  }
 
-        /* BOTOES DE ACESSO  */
-        .botao-chuteiras{
-            padding: 20px;
-            font-size: 20px;
-            
-        }
-        
-        .botao-camisas{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .botao-material{
-            padding: 20px;
-            font-size: 20px;
-        }
-        
-        .botao-tenis{
-            padding: 20px;
-            font-size: 20px;
-        }
-} 
+  .nike_azul {
+    display: none;
+  }
+
+  .nike_preta {
+    display: none;
+  }
+
+  .nike_rosa {
+    display: none;
+  }
+
+  .nike_verde {
+    display: none;
+  }
+
+  .adidas_verde {
+    display: none;
+  }
+
+  .nike_prata {
+    display: none;
+  }
+
+
+  /* botao camisa */
+  .camisas {
+    display: none;
+  }
+
+  /* botao chuteiras */
+  .chuteiras {
+    display: none;
+  }
+
+  /* batao materiais */
+  .material {
+    display: none;
+  }
+
+  /* botao tenis */
+  .tenis {
+    display: none;
+  }
+
+  /* botao_sair */
+  .sair {
+    display: none;
+  }
